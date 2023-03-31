@@ -47,7 +47,54 @@ import AddUser from "./components/AddUser";
 import StoreList from "./components/StoreList";
 import AddStore from "./components/AddStore";
 import NewCountry from "./components/NewCountry";
-
+import CountriesList from "./components/CountriesList";
+import NewState from "./components/NewState";
+import StateList from "./components/StateList";
+import Components from "./components/Components";
+import BlankPage from "./components/BlankPage";
+import Error404 from "./components/Error404";
+import Error500 from "./components/Error500";
+import SweetAlerts from "./components/SweetAlerts";
+import ToolTip from "./components/ToolTip";
+import PopOver from "./components/PopOver";
+import Ribbon from "./components/Ribbon";
+import ClipBoard from "./components/ClipBoard";
+import DragDrop from "./components/DragDrop";
+import RangeSlider from "./components/RangeSlider";
+import Rating from "./components/Rating";
+import Toastr from "./components/Toastr";
+import TextEditor from "./components/TextEditor";
+import Counter from "./components/Counter";
+import ScrollBar from "./components/ScrollBar";
+import Spinner from "./components/Spinner";
+import Notification from "./components/Notification";
+import LightBox from "./components/LightBox";
+import StickyNote from "./components/StickyNote";
+import TimeLine from "./components/TimeLine";
+import FormWizard from "./components/FormWizard";
+import ChartApex from "./components/ChartApex";
+import ChartJS from "./components/ChartJS";
+import ChartMorris from "./components/ChartMorris";
+import ChartFlot from "./components/ChartFlot";
+import ChartPeity from "./components/ChartPeity";
+import IconFontawesome from "./components/IconFontawesome";
+import IconFeather from "./components/IconFeather";
+import IconIonic from "./components/IconIonic";
+import IconMaterial from "./components/IconMaterial";
+import Iconpe7 from "./components/Iconpe7";
+import IconSimpleline from "./components/IconSimpleline";
+import IconThemify from "./components/IconThemify";
+import IconWeather from "./components/IconWeather";
+import IconTypicon from "./components/IconTypicon";
+import IconFlag from "./components/IconFlag";
+import FormBasicInputs from "./components/FormBasicInputs";
+import FormInputGroups from "./components/FormInputGroups";
+import FormHorizontal from "./components/FormHorizontal";
+import FormVertical from "./components/FormVertical";
+import FormMask from "./components/FormMask";
+import FormValidation from "./components/FormValidation";
+import FormSelect2 from "./components/FormSelect2";
+import FormFileUpload from "./components/FormFileUpload";
 
 function App() {
   return (
@@ -94,8 +141,56 @@ function App() {
       {/* <AddUser /> */}
       {/* <StoreList /> */}
       {/* <AddStore /> */}
-      <NewCountry />
-      
+      {/* <NewCountry /> */}
+      {/* <CountriesList /> */}
+      {/* <NewState /> */}
+      {/* <StateList /> */}
+      {/* <Components /> */}
+      {/* <BlankPage /> */}
+      {/* <Error404 /> */}
+      {/* <Error500 /> */}
+      {/* <SweetAlerts /> */}
+      {/* <ToolTip /> */}
+      {/* <PopOver /> */}
+      {/* <Ribbon /> */}
+      {/* <ClipBoard /> */}
+      {/* <DragDrop /> */}
+      {/* <RangeSlider /> */}
+      {/* <Rating /> */}
+      {/* <Toastr /> */}
+      {/* <TextEditor /> */}
+      {/* <Counter /> */}
+      {/* <ScrollBar /> */}
+      {/* <Spinner /> */}
+      {/* <Notification /> */}
+      {/* <LightBox /> */}
+      {/* <StickyNote /> */}
+      {/* <TimeLine /> */}
+      {/* <FormWizard /> */}
+      {/* <ChartApex /> */}
+      {/* <ChartJS /> */}
+      {/* <ChartMorris /> */}
+      {/* <ChartFlot /> */}
+      {/* <ChartPeity /> */}
+      {/* <IconFontawesome /> */}
+      {/* <IconFeather /> */}
+      {/* <IconIonic /> */}
+      {/* <IconMaterial /> */}
+      {/* <Iconpe7 /> */}
+      {/* <IconSimpleline /> */}
+      {/* <IconThemify /> */}
+      {/* <IconWeather /> */}
+      {/* <IconTypicon /> */}
+      {/* <IconFlag /> */}
+      {/* <FormBasicInputs /> */}
+      {/* <FormInputGroups /> */}
+      {/* <FormHorizontal /> */}
+      {/* <FormVertical /> */}
+      {/* <FormMask /> */}
+      {/* <FormValidation /> */}
+      {/* <FormSelect2 /> */}
+      {/* <FormFileUpload /> */}
+
     </>
   );
 }

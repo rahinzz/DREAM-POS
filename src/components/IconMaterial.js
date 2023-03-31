@@ -1,0 +1,700 @@
+import React from 'react'
+
+const IconMaterial = () => {
+  return (
+    <>
+        {/* <div id="global-loader" >
+			<div className="whirly-loader"> </div>
+		</div> */}
+
+
+		{/* Main Wrapper */}
+        <div className="main-wrapper">
+			
+			{/* Header */}
+			<div className="header">
+			
+				{/* Logo */}
+                 <div className="header-left active">
+					<a href="index.html" className="logo logo-normal">
+						<img src="assets/img/logo.png"  alt=""/>
+					</a>
+					<a href="index.html" className="logo logo-white">
+						<img src="assets/img/logo-white.png"  alt="" />
+					</a>
+					<a href="index.html" className="logo-small">
+						<img src="assets/img/logo-small.png"  alt="" />
+					</a>
+					<a id="toggle_btn" href="javascript:void(0);">
+					</a>
+                </div>
+				{/* Logo  */}
+				
+				<a id="mobile_btn" className="mobile_btn" href="#sidebar">
+					<span className="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				{/* Header Menu */}
+				<ul className="nav user-menu">
+				
+					{/* Search */}
+					<li className="nav-item">
+						<div className="top-nav-search">
+							<a href="javascript:void(0);" className="responsive-search">
+								<i className="fa fa-search"></i>
+						   </a>
+							<form action="#">
+								 <div className="searchinputs">
+										<input type="text" placeholder="Search Here ..." />
+										<div className="search-addon">
+											<span><img src="assets/img/icons/closes.svg" alt="img" /></span>
+										</div>
+									</div>
+									<a className="btn"  id="searchdiv"><img src="assets/img/icons/search.svg" alt="img" /></a>
+							</form>
+						</div>
+					</li>
+					{/* Search  */}
+				
+					{/* Flag */}
+					<li className="nav-item dropdown has-arrow flag-nav">
+						<a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
+							<img src="assets/img/flags/us1.png" alt="" height="20" />
+						</a>
+						<div className="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" className="dropdown-item">
+								<img src="assets/img/flags/us.png" alt="" height="16" /> English
+							</a>
+							<a href="javascript:void(0);" className="dropdown-item">
+								<img src="assets/img/flags/fr.png" alt="" height="16" /> French
+							</a>
+							<a href="javascript:void(0);" className="dropdown-item">
+								<img src="assets/img/flags/es.png" alt="" height="16" /> Spanish
+							</a>
+							<a href="javascript:void(0);" className="dropdown-item">
+								<img src="assets/img/flags/de.png" alt="" height="16" /> German
+							</a>
+						</div>
+					</li>
+					{/* Flag */}
+				
+					{/* Notifications */}
+					<li className="nav-item dropdown">
+						<a href="javascript:void(0);" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<img src="assets/img/icons/notification-bing.svg"   alt="img" /> <span className="badge rounded-pill">4</span>
+						</a>
+						<div className="dropdown-menu notifications">
+							<div className="topnav-dropdown-header">
+								<span className="notification-title">Notifications</span>
+								<a href="javascript:void(0)" className="clear-noti"> Clear All </a>
+							</div>
+							<div className="noti-content">
+								<ul className="notification-list">
+									<li className="notification-message">
+										<a href="activities.html">
+											<div className="media d-flex">
+												<span className="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-02.jpg" />
+												</span>
+												<div className="media-body flex-grow-1">
+													<p className="noti-details"><span className="noti-title">John Doe</span> added new task <span className="noti-title">Patient appointment booking</span></p>
+													<p className="noti-time"><span className="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li className="notification-message">
+										<a href="activities.html">
+											<div className="media d-flex">
+												<span className="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-03.jpg" />
+												</span>
+												<div className="media-body flex-grow-1">
+													<p className="noti-details"><span className="noti-title">Tarah Shropshire</span> changed the task name <span className="noti-title">Appointment booking with payment gateway</span></p>
+													<p className="noti-time"><span className="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li className="notification-message">
+										<a href="activities.html">
+											<div className="media d-flex">
+												<span className="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-06.jpg" />
+												</span>
+												<div className="media-body flex-grow-1">
+													<p className="noti-details"><span className="noti-title">Misty Tison</span> added <span className="noti-title">Domenic Houston</span> and <span className="noti-title">Claire Mapes</span> to project <span className="noti-title">Doctor available module</span></p>
+													<p className="noti-time"><span className="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li className="notification-message">
+										<a href="activities.html">
+											<div className="media d-flex">
+												<span className="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-17.jpg" />
+												</span>
+												<div className="media-body flex-grow-1">
+													<p className="noti-details"><span className="noti-title">Rolland Webber</span> completed task <span className="noti-title">Patient and Doctor video conferencing</span></p>
+													<p className="noti-time"><span className="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li className="notification-message">
+										<a href="activities.html">
+											<div className="media d-flex">
+												<span className="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-13.jpg" />
+												</span>
+												<div className="media-body flex-grow-1">
+													<p className="noti-details"><span className="noti-title">Bernardo Galaviz</span> added new task <span className="noti-title">Private chat module</span></p>
+													<p className="noti-time"><span className="notification-time">2 days ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div className="topnav-dropdown-footer">
+								<a href="activities.html">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					{/* Notifications */}
+					
+
+					<li className="nav-item dropdown has-arrow main-drop">
+						<a href="javascript:void(0);" className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+                            <span className="user-img"><img src="assets/img/profiles/avator1.jpg" alt="" />
+                            <span className="status online"></span></span>
+						</a>
+						<div className="dropdown-menu menu-drop-user">
+							<div className="profilename">
+								<div className="profileset">
+									<span className="user-img"><img src="assets/img/profiles/avator1.jpg" alt="" />
+									<span className="status online"></span></span>
+									<div className="profilesets">
+										<h6>John Doe</h6>
+										<h5>Admin</h5>
+									</div>
+								</div>
+								<hr className="m-0" />
+								<a className="dropdown-item" href="profile.html"> <i className="me-2"  data-feather="user"></i> My Profile</a>
+								<a className="dropdown-item" href="generalsettings.html"><i className="me-2" data-feather="settings"></i>Settings</a>
+								<hr className="m-0" />
+								<a className="dropdown-item logout pb-0" href="signin.html"><img src="assets/img/icons/log-out.svg" className="me-2" alt="img" />Logout</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				{/* Header Menu */}
+				
+				{/* Mobile Menu  */}
+				<div className="dropdown mobile-user-menu">
+					<a href="javascript:void(0);" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v"></i></a>
+					<div className="dropdown-menu dropdown-menu-right">
+						<a className="dropdown-item" href="profile.html">My Profile</a>
+						<a className="dropdown-item" href="generalsettings.html">Settings</a>
+						<a className="dropdown-item" href="signin.html">Logout</a>
+					</div>
+				</div>
+				{/* Mobile Menu  */}
+            </div>
+			{/* Header */}
+			
+           {/* Sidebar */}
+			<div className="sidebar" id="sidebar">
+				<div className="sidebar-inner slimscroll">
+					<div id="sidebar-menu" className="sidebar-menu">
+						<ul>
+							<li >
+								<a href="index.html" ><img src="assets/img/icons/dashboard.svg" alt="img" /><span> Dashboard</span> </a>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img" /><span> Product</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="productlist.html" >Product List</a></li>
+									<li><a href="addproduct.html" >Add Product</a></li>
+									<li><a href="categorylist.html" >Category List</a></li>
+									<li><a href="addcategory.html" className="active">Add Category</a></li>
+									<li><a href="subcategorylist.html">Sub Category List</a></li>
+									<li><a href="subaddcategory.html">Add Sub Category</a></li>
+									<li><a href="brandlist.html">Brand List</a></li>
+									<li><a href="addbrand.html">Add Brand</a></li>
+									<li><a href="importproduct.html">Import Products</a></li>
+									<li><a href="barcode.html">Print Barcode</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/sales1.svg" alt="img" /><span> Sales</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="saleslist.html">Sales List</a></li>
+									<li><a href="pos.html">POS</a></li>
+									<li><a href="pos.html">New Sales</a></li>
+									<li><a href="salesreturnlists.html">Sales Return List</a></li>
+									<li><a href="createsalesreturns.html">New Sales Return</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img" /><span> Purchase</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="purchaselist.html">Purchase List</a></li>
+									<li><a href="addpurchase.html">Add Purchase</a></li>
+									<li><a href="importpurchase.html">Import Purchase</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/expense1.svg" alt="img" /><span> Expense</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="expenselist.html">Expense List</a></li>
+									<li><a href="createexpense.html">Add Expense</a></li>
+									<li><a href="expensecategory.html">Expense Category</a></li>
+								</ul>
+							</li>
+							
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/quotation1.svg" alt="img" /><span> Quotation</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="quotationList.html">Quotation List</a></li>
+									<li><a href="addquotation.html">Add Quotation</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/transfer1.svg" alt="img" /><span> Transfer</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="transferlist.html">Transfer  List</a></li>
+									<li><a href="addtransfer.html">Add Transfer </a></li>
+									<li><a href="importtransfer.html">Import Transfer </a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/return1.svg" alt="img" /><span> Return</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="salesreturnlist.html">Sales Return List</a></li>
+									<li><a href="createsalesreturn.html">Add Sales Return </a></li>
+									<li><a href="purchasereturnlist.html">Purchase Return List</a></li>
+									<li><a href="createpurchasereturn.html">Add Purchase Return </a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img" /><span> People</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="customerlist.html">Customer List</a></li>
+									<li><a href="addcustomer.html">Add Customer  </a></li>
+									<li><a href="supplierlist.html">Supplier List</a></li>
+									<li><a href="addsupplier.html">Add Supplier </a></li>
+									<li><a href="userlist.html">User List</a></li>
+									<li><a href="adduser.html">Add User</a></li>
+									<li><a href="storelist.html">Store List</a></li>
+									<li><a href="addstore.html">Add Store</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/places.svg" alt="img" /><span> Places</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="newcountry.html">New Country</a></li>
+									<li><a href="countrieslist.html">Countries list</a></li>
+									<li><a href="newstate.html">New State </a></li>
+									<li><a href="statelist.html">State list</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="components.html" ><i data-feather="layers"></i><span> Components</span> </a>
+							</li>
+							<li>
+								<a href="blankpage.html" ><i data-feather="file"></i><span> Blank Page</span> </a>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="alert-octagon"></i> <span> Error Pages  </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="error-404.html">404 Error </a></li>
+									<li><a href="error-500.html">500 Error </a></li>
+								</ul>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="box"></i> <span>Elements </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="sweetalerts.html">Sweet Alerts</a></li>
+									<li><a href="tooltip.html">Tooltip</a></li>
+									<li><a href="popover.html">Popover</a></li>
+									<li><a href="ribbon.html">Ribbon</a></li>
+									<li><a href="clipboard.html">Clipboard</a></li>
+									<li><a href="drag-drop.html">Drag & Drop</a></li>
+									<li><a href="rangeslider.html">Range Slider</a></li>
+									<li><a href="rating.html">Rating</a></li>
+									<li><a href="toastr.html">Toastr</a></li>
+									<li><a href="text-editor.html">Text Editor</a></li>
+									<li><a href="counter.html">Counter</a></li>
+									<li><a href="scrollbar.html">Scrollbar</a></li>
+									<li><a href="spinner.html">Spinner</a></li>
+									<li><a href="notification.html">Notification</a></li>
+									<li><a href="lightbox.html">Lightbox</a></li>
+									<li><a href="stickynote.html">Sticky Note</a></li>
+									<li><a href="timeline.html">Timeline</a></li>
+									<li><a href="form-wizard.html">Form Wizard</a></li>
+								</ul>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="bar-chart-2"></i> <span> Charts  </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="chart-apex.html">Apex Charts</a></li>
+									<li><a href="chart-js.html">Chart Js</a></li>
+									<li><a href="chart-morris.html">Morris Charts</a></li>
+									<li><a href="chart-flot.html">Flot Charts</a></li>
+									<li><a href="chart-peity.html">Peity Charts</a></li>
+								</ul>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="award"></i><span> Icons  </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="icon-fontawesome.html">Fontawesome Icons</a></li>
+									<li><a href="icon-feather.html">Feather Icons</a></li>
+									<li><a href="icon-ionic.html">Ionic Icons</a></li>
+									<li><a href="icon-material.html">Material Icons</a></li>
+									<li><a href="icon-pe7.html">Pe7 Icons</a></li>
+									<li><a href="icon-simpleline.html">Simpleline Icons</a></li>
+									<li><a href="icon-themify.html">Themify Icons</a></li>
+									<li><a href="icon-weather.html">Weather Icons</a></li>
+									<li><a href="icon-typicon.html">Typicon Icons</a></li>
+									<li><a href="icon-flag.html">Flag Icons</a></li>
+								</ul>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="columns"></i> <span> Forms  </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="form-basic-inputs.html">Basic Inputs </a></li>
+									<li><a href="form-input-groups.html">Input Groups </a></li>
+									<li><a href="form-horizontal.html">Horizontal Form </a></li>
+									<li><a href="form-vertical.html"> Vertical Form </a></li>
+									<li><a href="form-mask.html">Form Mask </a></li>
+									<li><a href="form-validation.html">Form Validation </a></li>
+									<li><a href="form-select2.html">Form Select2 </a></li>
+									<li><a href="form-fileupload.html">File Upload </a></li>
+								</ul>
+							</li>
+							<li  className="submenu">
+								<a href="javascript:void(0);"><i data-feather="layout"></i> <span> Table  </span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="tables-basic.html" >Basic Tables </a></li>
+									<li><a href="data-tables.html">Data Table </a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img" /><span> Application</span> <span className="menu-arrow"></span></a>
+								<ul >
+									<li><a href="chat.html">Chat</a></li>
+									<li><a href="calendar.html">Calendar</a></li>
+									<li><a href="email.html">Email</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/time.svg" alt="img" /><span> Report</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="purchaseorderreport.html">Purchase order report</a></li>
+									<li><a href="inventoryreport.html">Inventory Report</a></li>
+									<li><a href="salesreport.html">Sales Report</a></li>
+									<li><a href="invoicereport.html">Invoice Report</a></li>
+										<li><a href="purchasereport.html">Purchase Report</a></li>
+										<li><a href="supplierreport.html">Supplier Report</a></li>
+										<li><a href="customerreport.html">Customer Report</a></li>
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img" /><span> Users</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="newuser.html">New User </a></li>
+									<li><a href="userlists.html">Users List</a></li>
+									  
+								</ul>
+							</li>
+							<li className="submenu">
+								<a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img" /><span> Settings</span> <span className="menu-arrow"></span></a>
+								<ul>
+									<li><a href="generalsettings.html">General Settings</a></li>
+									<li><a href="emailsettings.html">Email Settings</a></li>
+									 
+									<li><a href="paymentsettings.html">Payment Settings</a></li>
+									<li><a href="currencysettings.html">Currency Settings</a></li>
+									<li><a href="grouppermissions.html">Group Permissions</a></li>
+									<li><a href="taxrates.html">Tax Rates</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			{/* Sidebar */}
+
+            <div className="page-wrapper cardhead">
+                <div className="content container-fluid">
+				
+					{/* Page Header */}
+					<div className="page-header">
+						<div className="row">
+							<div className="col-sm-12">
+								<h3 className="page-title">Material Icon</h3>
+								<ul className="breadcrumb">
+									<li className="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+									<li className="breadcrumb-item active">Material Icon</li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+					{/* /Page Header		 */}
+					
+					<div className="row">
+					
+						{/* Chart */}
+						<div className="col-md-12">	
+							<div className="card">
+								<div className="card-header">
+									<div className="card-title">Material Icons</div>
+								</div>
+								<div className="card-body">
+									<div className="icons-items">
+										<ul className="icons-list">
+											<li><i className="mdi mdi-access-point" data-bs-toggle="tooltip" title="mdi-access-point"></i></li>
+											<li><i className="mdi mdi-access-point-network" data-bs-toggle="tooltip" title="mdi-access-point-network"></i></li>
+											<li><i className="mdi mdi-account" data-bs-toggle="tooltip" title="mdi-account"></i></li>
+											<li><i className="mdi mdi-account-alert" data-bs-toggle="tooltip" title="mdi-account-alert"></i></li>
+											<li><i className="mdi mdi-account-box" data-bs-toggle="tooltip" title="mdi-account-box"></i></li>
+											<li><i className="mdi mdi-account-box-outline" data-bs-toggle="tooltip" title="mdi-account-box-outline"></i></li>
+											<li><i className="mdi mdi-account-card-details" data-bs-toggle="tooltip" title="mdi-account-card-details"></i></li>
+											<li><i className="mdi mdi-account-check" data-bs-toggle="tooltip" title="mdi-account-check"></i></li>
+											<li><i className="mdi mdi-account-circle" data-bs-toggle="tooltip" title="mdi-account-circle"></i></li>
+											<li><i className="mdi mdi-account-convert" data-bs-toggle="tooltip" title="mdi-account-convert"></i></li>
+											<li><i className="mdi mdi-account-edit" data-bs-toggle="tooltip" title="mdi-account-edit"></i></li>
+											<li><i className="mdi mdi-account-key" data-bs-toggle="tooltip" title="mdi-account-key"></i></li>
+											<li><i className="mdi mdi-account-location" data-bs-toggle="tooltip" title="mdi-account-location"></i></li>
+											<li><i className="mdi mdi-account-minus" data-bs-toggle="tooltip" title="mdi-account-minus"></i></li>
+											<li><i className="mdi mdi-account-multiple" data-bs-toggle="tooltip" title="mdi-account-multiple"></i></li>
+											<li><i className="mdi mdi-account-multiple-minus" data-bs-toggle="tooltip" title="mdi-account-multiple-minus"></i></li>
+											<li><i className="mdi mdi-account-multiple-outline" data-bs-toggle="tooltip" title="mdi-account-multiple-outline"></i></li>
+											<li><i className="mdi mdi-account-multiple-plus" data-bs-toggle="tooltip" title="mdi-account-multiple-plus"></i></li>
+											<li><i className="mdi mdi-account-network" data-bs-toggle="tooltip" title="mdi-account-network"></i></li>
+											<li><i className="mdi mdi-account-off" data-bs-toggle="tooltip" title="mdi-account-off"></i></li>
+											<li><i className="mdi mdi-account-outline" data-bs-toggle="tooltip" title="mdi-account-outline"></i></li>
+											<li><i className="mdi mdi-account-plus" data-bs-toggle="tooltip" title="mdi-account-plus"></i></li>
+											<li><i className="mdi mdi-account-remove" data-bs-toggle="tooltip" title="mdi-account-remove"></i></li>
+											<li><i className="mdi mdi-account-search" data-bs-toggle="tooltip" title="mdi-account-search"></i></li>
+											<li><i className="mdi mdi-account-settings" data-bs-toggle="tooltip" title="mdi-account-settings"></i></li>
+											<li><i className="mdi mdi-account-settings-variant" data-bs-toggle="tooltip" title="mdi-account-settings-variant"></i></li>
+											<li><i className="mdi mdi-account-star" data-bs-toggle="tooltip" title="mdi-account-star"></i></li>
+											<li><i className="mdi mdi-account-switch" data-bs-toggle="tooltip" title="mdi-account-switch"></i></li>
+											<li><i className="mdi mdi-adjust" data-bs-toggle="tooltip" title="mdi-adjust"></i></li>
+											<li><i className="mdi mdi-air-conditioner" data-bs-toggle="tooltip" title="mdi-air-conditioner"></i></li>
+											<li><i className="mdi mdi-airballoon" data-bs-toggle="tooltip" title="mdi-airballoon"></i></li>
+											<li><i className="mdi mdi-airplane" data-bs-toggle="tooltip" title="mdi-airplane"></i></li>
+											<li><i className="mdi mdi-airplane-landing" data-bs-toggle="tooltip" title="mdi-airplane-landing"></i></li>
+											<li><i className="mdi mdi-airplane-off" data-bs-toggle="tooltip" title="mdi-airplane-off"></i></li>
+											<li><i className="mdi mdi-airplane-takeoff" data-bs-toggle="tooltip" title="mdi-airplane-takeoff"></i></li>
+											<li><i className="mdi mdi-airplay" data-bs-toggle="tooltip" title="mdi-airplay"></i></li>
+											<li><i className="mdi mdi-alarm" data-bs-toggle="tooltip" title="mdi-alarm"></i></li>
+											<li><i className="mdi mdi-alarm-bell" data-bs-toggle="tooltip" title="mdi-alarm-bell"></i></li>
+											<li><i className="mdi mdi-alarm-check" data-bs-toggle="tooltip" title="mdi-alarm-check"></i></li>
+											<li><i className="mdi mdi-alarm-light" data-bs-toggle="tooltip" title="mdi-alarm-light"></i></li>
+											<li><i className="mdi mdi-alarm-multiple" data-bs-toggle="tooltip" title="mdi-alarm-multiple"></i></li>
+											<li><i className="mdi mdi-alarm-off" data-bs-toggle="tooltip" title="mdi-alarm-off"></i></li>
+											<li><i className="mdi mdi-alarm-plus" data-bs-toggle="tooltip" title="mdi-alarm-plus"></i></li>
+											<li><i className="mdi mdi-alarm-snooze" data-bs-toggle="tooltip" title="mdi-alarm-snooze"></i></li>
+											<li><i className="mdi mdi-album" data-bs-toggle="tooltip" title="mdi-album"></i></li>
+											<li><i className="mdi mdi-alert" data-bs-toggle="tooltip" title="mdi-alert"></i></li>
+											<li><i className="mdi mdi-alert-box" data-bs-toggle="tooltip" title="mdi-alert-box"></i></li>
+											<li><i className="mdi mdi-alert-circle" data-bs-toggle="tooltip" title="mdi-alert-circle"></i></li>
+											<li><i className="mdi mdi-alert-circle-outline" data-bs-toggle="tooltip" title="mdi-alert-circle-outline"></i></li>
+											<li><i className="mdi mdi-alert-decagram" data-bs-toggle="tooltip" title="mdi-alert-decagram"></i></li>
+											<li><i className="mdi mdi-alert-octagon" data-bs-toggle="tooltip" title="mdi-alert-octagon"></i></li>
+											<li><i className="mdi mdi-alert-octagram" data-bs-toggle="tooltip" title="mdi-alert-octagram"></i></li>
+											<li><i className="mdi mdi-alert-outline" data-bs-toggle="tooltip" title="mdi-alert-outline"></i></li>
+											<li><i className="mdi mdi-all-inclusive" data-bs-toggle="tooltip" title="mdi-all-inclusive"></i></li>
+											<li><i className="mdi mdi-alpha" data-bs-toggle="tooltip" title="mdi-alpha"></i></li>
+											<li><i className="mdi mdi-alphabetical" data-bs-toggle="tooltip" title="mdi-alphabetical"></i></li>
+											<li><i className="mdi mdi-altimeter" data-bs-toggle="tooltip" title="mdi-altimeter"></i></li>
+											<li><i className="mdi mdi-amazon" data-bs-toggle="tooltip" title="mdi-amazon"></i></li>
+											<li><i className="mdi mdi-amazon-clouddrive" data-bs-toggle="tooltip" title="mdi-amazon-clouddrive"></i></li>
+											<li><i className="mdi mdi-ambulance" data-bs-toggle="tooltip" title="mdi-ambulance"></i></li>
+											<li><i className="mdi mdi-amplifier" data-bs-toggle="tooltip" title="mdi-amplifier"></i></li>
+											<li><i className="mdi mdi-anchor" data-bs-toggle="tooltip" title="mdi-anchor"></i></li>
+											<li><i className="mdi mdi-android" data-bs-toggle="tooltip" title="mdi-android"></i></li>
+											<li><i className="mdi mdi-android-debug-bridge" data-bs-toggle="tooltip" title="mdi-android-debug-bridge"></i></li>
+											<li><i className="mdi mdi-android-head" data-bs-toggle="tooltip" title="mdi-android-head"></i></li>
+											<li><i className="mdi mdi-android-studio" data-bs-toggle="tooltip" title="mdi-android-studio"></i></li>
+											<li><i className="mdi mdi-angular" data-bs-toggle="tooltip" title="mdi-angular"></i></li>
+											<li><i className="mdi mdi-angularjs" data-bs-toggle="tooltip" title="mdi-angularjs"></i></li>
+											<li><i className="mdi mdi-animation" data-bs-toggle="tooltip" title="mdi-animation"></i></li>
+											<li><i className="mdi mdi-apple" data-bs-toggle="tooltip" title="mdi-apple"></i></li>
+											<li><i className="mdi mdi-apple-finder" data-bs-toggle="tooltip" title="mdi-apple-finder"></i></li>
+											<li><i className="mdi mdi-apple-ios" data-bs-toggle="tooltip" title="mdi-apple-ios"></i></li>
+											<li><i className="mdi mdi-apple-keyboard-caps" data-bs-toggle="tooltip" title="mdi-apple-keyboard-caps"></i></li>
+											<li><i className="mdi mdi-apple-keyboard-command" data-bs-toggle="tooltip" title="mdi-apple-keyboard-command"></i></li>
+											<li><i className="mdi mdi-apple-keyboard-control" data-bs-toggle="tooltip" title="mdi-apple-keyboard-control"></i></li>
+											<li><i className="mdi mdi-apple-keyboard-option" data-bs-toggle="tooltip" title="mdi-apple-keyboard-option"></i></li>
+											<li><i className="mdi mdi-apple-keyboard-shift" data-bs-toggle="tooltip" title="mdi-apple-keyboard-shift"></i></li>
+											<li><i className="mdi mdi-apple-mobileme" data-bs-toggle="tooltip" title="mdi-apple-mobileme"></i></li>
+											<li><i className="mdi mdi-apple-safari" data-bs-toggle="tooltip" title="mdi-apple-safari"></i></li>
+											<li><i className="mdi mdi-application" data-bs-toggle="tooltip" title="mdi-application"></i></li>
+											<li><i className="mdi mdi-approval" data-bs-toggle="tooltip" title="mdi-approval"></i></li>
+											<li><i className="mdi mdi-apps" data-bs-toggle="tooltip" title="mdi-apps"></i></li>
+											<li><i className="mdi mdi-archive" data-bs-toggle="tooltip" title="mdi-archive"></i></li>
+											<li><i className="mdi mdi-arrange-bring-forward" data-bs-toggle="tooltip" title="mdi-arrange-bring-forward"></i></li>
+											<li><i className="mdi mdi-arrange-send-to-back" data-bs-toggle="tooltip" title="mdi-arrange-send-to-back"></i></li>
+											<li><i className="mdi mdi-arrange-bring-to-front" data-bs-toggle="tooltip" title="mdi-arrange-bring-to-front"></i></li>
+											<li><i className="mdi mdi-arrange-send-backward" data-bs-toggle="tooltip" title="mdi-arrange-send-backward"></i></li>
+											<li><i className="mdi mdi-arrow-all" data-bs-toggle="tooltip" title="mdi-arrow-all"></i></li>
+											<li><i className="mdi mdi-arrow-bottom-left" data-bs-toggle="tooltip" title="mdi-arrow-bottom-left"></i></li>
+											<li><i className="mdi mdi-arrow-bottom-right" data-bs-toggle="tooltip" title="mdi-arrow-bottom-right"></i></li>
+											<li><i className="mdi mdi-arrow-collapse" data-bs-toggle="tooltip" title="mdi-arrow-collapse"></i></li>
+											<li><i className="mdi mdi-arrow-collapse-all" data-bs-toggle="tooltip" title="mdi-arrow-collapse-all"></i></li>
+											<li><i className="mdi mdi-arrow-collapse-down" data-bs-toggle="tooltip" title="mdi-arrow-collapse-down"></i></li>
+											<li><i className="mdi mdi-arrow-collapse-left" data-bs-toggle="tooltip" title="mdi-arrow-collapse-left"></i></li>
+											<li><i className="mdi mdi-arrow-collapse-right" data-bs-toggle="tooltip" title="mdi-arrow-collapse-right"></i></li>
+											<li><i className="mdi mdi-arrow-collapse-up" data-bs-toggle="tooltip" title="mdi-arrow-collapse-up"></i></li>
+											<li><i className="mdi mdi-arrow-down" data-bs-toggle="tooltip" title="mdi-arrow-down"></i></li>
+											<li><i className="mdi mdi-arrow-down-bold" data-bs-toggle="tooltip" title="mdi-arrow-down-bold"></i></li>
+											<li><i className="mdi mdi-arrow-down-bold-box" data-bs-toggle="tooltip" title="mdi-arrow-down-bold-box"></i></li>
+											<li><i className="mdi mdi-arrow-down-bold-box-outline" data-bs-toggle="tooltip" title="mdi-arrow-down-bold-box-outline"></i></li>
+											<li><i className="mdi mdi-arrow-down-bold-circle" data-bs-toggle="tooltip" title="mdi-arrow-down-bold-circle"></i></li>
+											<li><i className="mdi mdi-arrow-down-bold-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-down-bold-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-down-box" data-bs-toggle="tooltip" title="mdi-arrow-down-box"></i></li>
+											<li><i className="mdi mdi-arrow-down-drop-circle" data-bs-toggle="tooltip" title="mdi-arrow-down-drop-circle"></i></li>
+											<li><i className="mdi mdi-arrow-down-drop-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-down-drop-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-down-thick" data-bs-toggle="tooltip" title="mdi-arrow-down-thick"></i></li>
+											<li><i className="mdi mdi-arrow-expand" data-bs-toggle="tooltip" title="mdi-arrow-expand"></i></li>
+											<li><i className="mdi mdi-arrow-expand-all" data-bs-toggle="tooltip" title="mdi-arrow-expand-all"></i></li>
+											<li><i className="mdi mdi-arrow-expand-down" data-bs-toggle="tooltip" title="mdi-arrow-expand-down"></i></li>
+											<li><i className="mdi mdi-arrow-expand-left" data-bs-toggle="tooltip" title="mdi-arrow-expand-left"></i></li>
+											<li><i className="mdi mdi-arrow-expand-right" data-bs-toggle="tooltip" title="mdi-arrow-expand-right"></i></li>
+											<li><i className="mdi mdi-arrow-expand-up" data-bs-toggle="tooltip" title="mdi-arrow-expand-up"></i></li>
+											<li><i className="mdi mdi-arrow-left" data-bs-toggle="tooltip" title="mdi-arrow-left"></i></li>
+											<li><i className="mdi mdi-arrow-left-bold" data-bs-toggle="tooltip" title="mdi-arrow-left-bold"></i></li>
+											<li><i className="mdi mdi-arrow-left-bold-box" data-bs-toggle="tooltip" title="mdi-arrow-left-bold-box"></i></li>
+											<li><i className="mdi mdi-arrow-left-bold-box-outline" data-bs-toggle="tooltip" title="mdi-arrow-left-bold-box-outline"></i></li>
+											<li><i className="mdi mdi-arrow-left-bold-circle" data-bs-toggle="tooltip" title="mdi-arrow-left-bold-circle"></i></li>
+											<li><i className="mdi mdi-arrow-left-bold-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-left-bold-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-left-box" data-bs-toggle="tooltip" title="mdi-arrow-left-box"></i></li>
+											<li><i className="mdi mdi-arrow-left-drop-circle" data-bs-toggle="tooltip" title="mdi-arrow-left-drop-circle"></i></li>
+											<li><i className="mdi mdi-arrow-left-drop-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-left-drop-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-left-thick" data-bs-toggle="tooltip" title="mdi-arrow-left-thick"></i></li>
+											<li><i className="mdi mdi-arrow-right" data-bs-toggle="tooltip" title="mdi-arrow-right"></i></li>
+											<li><i className="mdi mdi-arrow-right-bold" data-bs-toggle="tooltip" title="mdi-arrow-right-bold"></i></li>
+											<li><i className="mdi mdi-arrow-right-bold-box" data-bs-toggle="tooltip" title="mdi-arrow-right-bold-box"></i></li>
+											<li><i className="mdi mdi-arrow-right-bold-box-outline" data-bs-toggle="tooltip" title="mdi-arrow-right-bold-box-outline"></i></li>
+											<li><i className="mdi mdi-arrow-right-bold-circle" data-bs-toggle="tooltip" title="mdi-arrow-right-bold-circle"></i></li>
+											<li><i className="mdi mdi-arrow-right-bold-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-right-bold-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-right-box" data-bs-toggle="tooltip" title="mdi-arrow-right-box"></i></li>
+											<li><i className="mdi mdi-arrow-right-drop-circle" data-bs-toggle="tooltip" title="mdi-arrow-right-drop-circle"></i></li>
+											<li><i className="mdi mdi-arrow-right-drop-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-right-drop-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-right-thick" data-bs-toggle="tooltip" title="mdi-arrow-right-thick"></i></li>
+											<li><i className="mdi mdi-arrow-top-left" data-bs-toggle="tooltip" title="mdi-arrow-top-left"></i></li>
+											<li><i className="mdi mdi-arrow-top-right" data-bs-toggle="tooltip" title="mdi-arrow-top-right"></i></li>
+											<li><i className="mdi mdi-arrow-up" data-bs-toggle="tooltip" title="mdi-arrow-up"></i></li>
+											<li><i className="mdi mdi-arrow-up-bold" data-bs-toggle="tooltip" title="mdi-arrow-up-bold"></i></li>
+											<li><i className="mdi mdi-arrow-up-bold-box" data-bs-toggle="tooltip" title="mdi-arrow-up-bold-box"></i></li>
+											<li><i className="mdi mdi-arrow-up-bold-box-outline" data-bs-toggle="tooltip" title="mdi-arrow-up-bold-box-outline"></i></li>
+											<li><i className="mdi mdi-arrow-up-bold-circle" data-bs-toggle="tooltip" title="mdi-arrow-up-bold-circle"></i></li>
+											<li><i className="mdi mdi-arrow-up-bold-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-up-bold-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-up-box" data-bs-toggle="tooltip" title="mdi-arrow-up-box"></i></li>
+											<li><i className="mdi mdi-arrow-up-drop-circle" data-bs-toggle="tooltip" title="mdi-arrow-up-drop-circle"></i></li>
+											<li><i className="mdi mdi-arrow-up-drop-circle-outline" data-bs-toggle="tooltip" title="mdi-arrow-up-drop-circle-outline"></i></li>
+											<li><i className="mdi mdi-arrow-up-thick" data-bs-toggle="tooltip" title="mdi-arrow-up-thick"></i></li>
+											<li><i className="mdi mdi-assistant" data-bs-toggle="tooltip" title="mdi-assistant"></i></li>
+											<li><i className="mdi mdi-asterisk" data-bs-toggle="tooltip" title="mdi-asterisk"></i></li>
+											<li><i className="mdi mdi-at" data-bs-toggle="tooltip" title="mdi-at"></i></li>
+											<li><i className="mdi mdi-atom" data-bs-toggle="tooltip" title="mdi-atom"></i></li>
+											<li><i className="mdi mdi-attachment" data-bs-toggle="tooltip" title="mdi-attachment"></i></li>
+											<li><i className="mdi mdi-audiobook" data-bs-toggle="tooltip" title="mdi-audiobook"></i></li>
+											<li><i className="mdi mdi-auto-fix" data-bs-toggle="tooltip" title="mdi-auto-fix"></i></li>
+											<li><i className="mdi mdi-auto-upload" data-bs-toggle="tooltip" title="mdi-auto-upload"></i></li>
+											<li><i className="mdi mdi-autorenew" data-bs-toggle="tooltip" title="mdi-autorenew"></i></li>
+											<li><i className="mdi mdi-av-timer" data-bs-toggle="tooltip" title="mdi-av-timer"></i></li>
+											<li><i className="mdi mdi-baby" data-bs-toggle="tooltip" title="mdi-baby"></i></li>
+											<li><i className="mdi mdi-baby-buggy" data-bs-toggle="tooltip" title="mdi-baby-buggy"></i></li>
+											<li><i className="mdi mdi-backburger" data-bs-toggle="tooltip" title="mdi-backburger"></i></li>
+											<li><i className="mdi mdi-backspace" data-bs-toggle="tooltip" title="mdi-backspace"></i></li>
+											<li><i className="mdi mdi-backup-restore" data-bs-toggle="tooltip" title="mdi-backup-restore"></i></li>
+											<li><i className="mdi mdi-bandcamp" data-bs-toggle="tooltip" title="mdi-bandcamp"></i></li>
+											<li><i className="mdi mdi-bank" data-bs-toggle="tooltip" title="mdi-bank"></i></li>
+											<li><i className="mdi mdi-barcode" data-bs-toggle="tooltip" title="mdi-barcode"></i></li>
+											<li><i className="mdi mdi-barcode-scan" data-bs-toggle="tooltip" title="mdi-barcode-scan"></i></li>
+											<li><i className="mdi mdi-barley" data-bs-toggle="tooltip" title="mdi-barley"></i></li>
+											<li><i className="mdi mdi-barrel" data-bs-toggle="tooltip" title="mdi-barrel"></i></li>
+											<li><i className="mdi mdi-basecamp" data-bs-toggle="tooltip" title="mdi-basecamp"></i></li>
+											<li><i className="mdi mdi-basket" data-bs-toggle="tooltip" title="mdi-basket"></i></li>
+											<li><i className="mdi mdi-basket-fill" data-bs-toggle="tooltip" title="mdi-basket-fill"></i></li>
+											<li><i className="mdi mdi-basket-unfill" data-bs-toggle="tooltip" title="mdi-basket-unfill"></i></li>
+											<li><i className="mdi mdi-battery" data-bs-toggle="tooltip" title="mdi-battery"></i></li>
+											<li><i className="mdi mdi-battery-10" data-bs-toggle="tooltip" title="mdi-battery-10"></i></li>
+											<li><i className="mdi mdi-battery-20" data-bs-toggle="tooltip" title="mdi-battery-20"></i></li>
+											<li><i className="mdi mdi-battery-30" data-bs-toggle="tooltip" title="mdi-battery-30"></i></li>
+											<li><i className="mdi mdi-battery-40" data-bs-toggle="tooltip" title="mdi-battery-40"></i></li>
+											<li><i className="mdi mdi-battery-50" data-bs-toggle="tooltip" title="mdi-battery-50"></i></li>
+											<li><i className="mdi mdi-battery-60" data-bs-toggle="tooltip" title="mdi-battery-60"></i></li>
+											<li><i className="mdi mdi-battery-70" data-bs-toggle="tooltip" title="mdi-battery-70"></i></li>
+											<li><i className="mdi mdi-battery-80" data-bs-toggle="tooltip" title="mdi-battery-80"></i></li>
+											<li><i className="mdi mdi-battery-90" data-bs-toggle="tooltip" title="mdi-battery-90"></i></li>
+											<li><i className="mdi mdi-battery-alert" data-bs-toggle="tooltip" title="mdi-battery-alert"></i></li>
+											<li><i className="mdi mdi-battery-charging" data-bs-toggle="tooltip" title="mdi-battery-charging"></i></li>
+											<li><i className="mdi mdi-battery-charging-100" data-bs-toggle="tooltip" title="mdi-battery-charging-100"></i></li>
+											<li><i className="mdi mdi-battery-charging-20" data-bs-toggle="tooltip" title="mdi-battery-charging-20"></i></li>
+											<li><i className="mdi mdi-battery-charging-30" data-bs-toggle="tooltip" title="mdi-battery-charging-30"></i></li>
+											<li><i className="mdi mdi-battery-charging-40" data-bs-toggle="tooltip" title="mdi-battery-charging-40"></i></li>
+											<li><i className="mdi mdi-battery-charging-60" data-bs-toggle="tooltip" title="mdi-battery-charging-60"></i></li>
+											<li><i className="mdi mdi-battery-charging-80" data-bs-toggle="tooltip" title="mdi-battery-charging-80"></i></li>
+											<li><i className="mdi mdi-battery-charging-90" data-bs-toggle="tooltip" title="mdi-battery-charging-90"></i></li>
+											<li><i className="mdi mdi-battery-minus" data-bs-toggle="tooltip" title="mdi-battery-minus"></i></li>
+											<li><i className="mdi mdi-battery-negative" data-bs-toggle="tooltip" title="mdi-battery-negative"></i></li>
+											<li><i className="mdi mdi-battery-outline" data-bs-toggle="tooltip" title="mdi-battery-outline"></i></li>
+											<li><i className="mdi mdi-battery-plus" data-bs-toggle="tooltip" title="mdi-battery-plus"></i></li>
+											<li><i className="mdi mdi-battery-unknown" data-bs-toggle="tooltip" title="mdi-battery-unknown"></i></li>
+											<li><i className="mdi mdi-beach" data-bs-toggle="tooltip" title="mdi-beach"></i></li>
+											<li><i className="mdi mdi-zip-box" data-bs-toggle="tooltip" title="mdi-zip-box"></i></li>
+											<li><i className="mdi mdi-youtube-play" data-bs-toggle="tooltip" title="mdi-youtube-play"></i></li>
+											<li><i className="mdi mdi-yin-yang" data-bs-toggle="tooltip" title="mdi-yin-yang"></i></li>
+											<li><i className="mdi mdi-yelp" data-bs-toggle="tooltip" title="mdi-yelp"></i></li>
+											<li><i className="mdi mdi-yammer" data-bs-toggle="tooltip" title="mdi-yammer"></i></li>
+											<li><i className="mdi mdi-xmpp" data-bs-toggle="tooltip" title="mdi-xmpp"></i></li>
+											<li><i className="mdi mdi-xml" data-bs-toggle="tooltip" title="mdi-xml"></i></li>
+											<li><i className="mdi mdi-wrench" data-bs-toggle="tooltip" title="mdi-wrench"></i></li>
+											<li><i className="mdi mdi-wrap" data-bs-toggle="tooltip" title="mdi-wrap"></i></li>
+											<li><i className="mdi mdi-wunderlist" data-bs-toggle="tooltip" title="mdi-wunderlist"></i></li>
+											<li><i className="mdi mdi-wrench" data-bs-toggle="tooltip" title="mdi-wrench"></i></li>
+											<li><i className="mdi mdi-vpn" data-bs-toggle="tooltip" title="mdi-vpn"></i></li>
+											<li><i className="mdi mdi-volume-off" data-bs-toggle="tooltip" title="mdi-volume-off"></i></li>
+											<li><i className="mdi mdi-volume-mute" data-bs-toggle="tooltip" title="mdi-volume-mute"></i></li>
+											<li><i className="mdi mdi-vlc" data-bs-toggle="tooltip" title="mdi-vlc"></i></li>
+											<li><i className="mdi mdi-video" data-bs-toggle="tooltip" title="mdi-video"></i></li>
+											<li><i className="mdi mdi-usb" data-bs-toggle="tooltip" title="mdi-usb"></i></li>
+											<li><i className="mdi mdi-upload-network" data-bs-toggle="tooltip" title="mdi-upload-network"></i></li>
+											<li><i className="mdi mdi-update" data-bs-toggle="tooltip" title="mdi-update"></i></li>
+											<li><i className="mdi mdi-unity" data-bs-toggle="tooltip" title="mdi-unity"></i></li>
+											<li><i className="mdi mdi-undo" data-bs-toggle="tooltip" title="mdi-undo"></i></li>
+											<li><i className="mdi mdi-ubuntu" data-bs-toggle="tooltip" title="mdi-ubuntu"></i></li>
+											<li><i className="mdi mdi-tune" data-bs-toggle="tooltip" title="mdi-tune"></i></li>
+											<li><i className="mdi mdi-truck-trailer" data-bs-toggle="tooltip" title="mdi-truck-trailer"></i></li>
+											<li><i className="mdi mdi-truck" data-bs-toggle="tooltip" title="mdi-truck"></i></li>
+											<li><i className="mdi mdi-svg" data-bs-toggle="tooltip" title="mdi-svg"></i></li>
+											<li><i className="mdi mdi-subway" data-bs-toggle="tooltip" title="mdi-subway"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						{/* /Chart */}
+						
+					</div>
+				
+				</div>	
+            </div>
+        </div>
+        {/* /Main Wrapper */}
+    </>
+  )
+}
+
+export default IconMaterial
