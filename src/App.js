@@ -95,6 +95,25 @@ import FormMask from "./components/FormMask";
 import FormValidation from "./components/FormValidation";
 import FormSelect2 from "./components/FormSelect2";
 import FormFileUpload from "./components/FormFileUpload";
+import TablesBasic from "./components/TablesBasic";
+import DataTables from "./components/DataTables";
+import Chat from "./components/Chat";
+import Calendar from "./components/Calendar";
+import Email from "./components/Email";
+import PurchaseOrderReport from "./components/PurchaseOrderReport";
+import InventoryReport from "./components/InventoryReport";
+import SalesReport from "./components/SalesReport";
+import InvoiceReport from "./components/InvoiceReport";
+import PurchaseReport from "./components/PurchaseReport";
+import SupplierReport from "./components/SupplierReport";
+import CustomerReport from "./components/CustomerReport";
+import NewUser from "./components/NewUser";
+import UserLists from "./components/UserLists";
+import EmailSettings from "./components/EmailSettings";
+import PaymentSettings from "./components/PaymentSettings";
+import CurrencySettings from "./components/CurrencySettings";
+import GroupPermissions from "./components/GroupPermissions";
+import TaxRates from "./components/TaxRates";
 
 function App() {
   return (
@@ -190,6 +209,26 @@ function App() {
       {/* <FormValidation /> */}
       {/* <FormSelect2 /> */}
       {/* <FormFileUpload /> */}
+      {/* <TablesBasic /> */}
+      {/* <DataTables /> */}
+      {/* <Chat /> */}
+      {/* <Calendar /> */}
+      {/* <Email /> */}
+      {/* <PurchaseOrderReport /> */}
+      {/* <InventoryReport /> */}
+      {/* <SalesReport /> */}
+      {/* <InvoiceReport /> */}
+      {/* <PurchaseReport /> */}
+      {/* <SupplierReport /> */}
+      {/* <CustomerReport /> */}
+      {/* <NewUser /> */}
+      {/* <UserLists /> */}
+      {/* <GeneralSettings /> */}
+      {/* <EmailSettings /> */}
+      {/* <PaymentSettings /> */}
+      {/* <CurrencySettings /> */}
+      {/* <GroupPermissions /> */}
+      <TaxRates />
 
     </>
   );
