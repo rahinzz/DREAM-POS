@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ForgetPassword = () => {
   return (
@@ -26,7 +27,7 @@ const ForgetPassword = () => {
                                 </div>
                             </div>
                             <div className="form-login">
-                                <a className="btn btn-login" href="signin.html">Submit</a>
+                                <Link className="btn btn-login" to="/signin">Submit</Link>
                             </div>
                         </div>
                     </div>

@@ -1,47 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Components = () => {
   return (
     <>
       {/* <div id="global-loader" >
-			<div className="whirly-loader"> </div>
-		</div> */}
+			  <div className="whirly-loader"> </div>
+		  </div> */}
 
       {/* Main Wrapper */}
       <div className="main-wrapper">
+
         {/* Header */}
         <div className="header">
           {/* Logo */}
           <div className="header-left active">
-            <a href="index.html" className="logo logo-normal">
+            <Link to="/home" className="logo logo-normal">
               <img src="assets/img/logo.png" alt="" />
-            </a>
-            <a href="index.html" className="logo logo-white">
+            </Link>
+            <Link to="/home" className="logo logo-white">
               <img src="assets/img/logo-white.png" alt="" />
-            </a>
-            <a href="index.html" className="logo-small">
+            </Link>
+            <Link to="/home" className="logo-small">
               <img src="assets/img/logo-small.png" alt="" />
-            </a>
-            <a id="toggle_btn" href="javascript:void(0);"></a>
+            </Link>
+            <Link id="toggle_btn" to="javascript:void(0);"></Link>
           </div>
-          {/* Logo  */}
+          {/* Logo */}
 
-          <a id="mobile_btn" className="mobile_btn" href="#sidebar">
+          <Link id="mobile_btn" className="mobile_btn" to="#sidebar">
             <span className="bar-icon">
               <span></span>
               <span></span>
               <span></span>
             </span>
-          </a>
+          </Link>
 
           {/* Header Menu */}
           <ul className="nav user-menu">
             {/* Search */}
             <li className="nav-item">
               <div className="top-nav-search">
-                <a href="javascript:void(0);" className="responsive-search">
+                <Link to="javascript:void(0);" className="responsive-search">
                   <i className="fa fa-search"></i>
-                </a>
+                </Link>
                 <form action="#">
                   <div className="searchinputs">
                     <input type="text" placeholder="Search Here ..." />
@@ -51,67 +53,67 @@ const Components = () => {
                       </span>
                     </div>
                   </div>
-                  <a className="btn" id="searchdiv">
+                  <Link className="btn" id="searchdiv">
                     <img src="assets/img/icons/search.svg" alt="img" />
-                  </a>
+                  </Link>
                 </form>
               </div>
             </li>
-            {/* Search  */}
+            {/* Search */}
 
             {/* Flag */}
             <li className="nav-item dropdown has-arrow flag-nav">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
-                href="javascript:void(0);"
+                to="javascript:void(0);"
                 role="button"
               >
                 <img src="assets/img/flags/us1.png" alt="" height="20" />
-              </a>
+              </Link>
               <div className="dropdown-menu dropdown-menu-right">
-                <a href="javascript:void(0);" className="dropdown-item">
+                <Link to="javascript:void(0);" className="dropdown-item">
                   <img src="assets/img/flags/us.png" alt="" height="16" />{" "}
                   English
-                </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
                   <img src="assets/img/flags/fr.png" alt="" height="16" />{" "}
                   French
-                </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
                   <img src="assets/img/flags/es.png" alt="" height="16" />{" "}
                   Spanish
-                </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
                   <img src="assets/img/flags/de.png" alt="" height="16" />{" "}
                   German
-                </a>
+                </Link>
               </div>
             </li>
             {/* Flag */}
 
             {/* Notifications */}
             <li className="nav-item dropdown">
-              <a
-                href="javascript:void(0);"
+              <Link
+                to="javascript:void(0);"
                 className="dropdown-toggle nav-link"
                 data-bs-toggle="dropdown"
               >
                 <img src="assets/img/icons/notification-bing.svg" alt="img" />{" "}
                 <span className="badge rounded-pill">4</span>
-              </a>
+              </Link>
               <div className="dropdown-menu notifications">
                 <div className="topnav-dropdown-header">
                   <span className="notification-title">Notifications</span>
-                  <a href="javascript:void(0)" className="clear-noti">
+                  <Link to="javascript:void(0)" className="clear-noti">
                     {" "}
                     Clear All{" "}
-                  </a>
+                  </Link>
                 </div>
                 <div className="noti-content">
                   <ul className="notification-list">
                     <li className="notification-message">
-                      <a href="activities.html">
+                      <Link to="/activities">
                         <div className="media d-flex">
                           <span className="avatar flex-shrink-0">
                             <img
@@ -134,10 +136,10 @@ const Components = () => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="notification-message">
-                      <a href="activities.html">
+                      <Link to="/activities">
                         <div className="media d-flex">
                           <span className="avatar flex-shrink-0">
                             <img
@@ -162,10 +164,10 @@ const Components = () => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="notification-message">
-                      <a href="activities.html">
+                      <Link to="/activities">
                         <div className="media d-flex">
                           <span className="avatar flex-shrink-0">
                             <img
@@ -194,10 +196,10 @@ const Components = () => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="notification-message">
-                      <a href="activities.html">
+                      <Link to="/activities">
                         <div className="media d-flex">
                           <span className="avatar flex-shrink-0">
                             <img
@@ -220,10 +222,10 @@ const Components = () => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="notification-message">
-                      <a href="activities.html">
+                      <Link to="/activities">
                         <div className="media d-flex">
                           <span className="avatar flex-shrink-0">
                             <img
@@ -248,20 +250,20 @@ const Components = () => {
                             </p>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="topnav-dropdown-footer">
-                  <a href="activities.html">View all Notifications</a>
+                  <Link to="/activities">View all Notifications</Link>
                 </div>
               </div>
             </li>
             {/* Notifications */}
 
             <li className="nav-item dropdown has-arrow main-drop">
-              <a
-                href="javascript:void(0);"
+              <Link
+                to="javascript:void(0);"
                 className="dropdown-toggle nav-link userset"
                 data-bs-toggle="dropdown"
               >
@@ -269,7 +271,7 @@ const Components = () => {
                   <img src="assets/img/profiles/avator1.jpg" alt="" />
                   <span className="status online"></span>
                 </span>
-              </a>
+              </Link>
               <div className="dropdown-menu menu-drop-user">
                 <div className="profilename">
                   <div className="profileset">
@@ -283,51 +285,52 @@ const Components = () => {
                     </div>
                   </div>
                   <hr className="m-0" />
-                  <a className="dropdown-item" href="profile.html">
+                  <Link className="dropdown-item" to="/profile">
                     {" "}
                     <i className="me-2" data-feather="user"></i> My Profile
-                  </a>
-                  <a className="dropdown-item" href="generalsettings.html">
+                  </Link>
+                  <Link className="dropdown-item" to="/generalsettings">
                     <i className="me-2" data-feather="settings"></i>Settings
-                  </a>
+                  </Link>
                   <hr className="m-0" />
-                  <a className="dropdown-item logout pb-0" href="signin.html">
-                    <img
+				  <Link to ="/signin" className="dropdown-item logout pb-0">
+				  <img
                       src="assets/img/icons/log-out.svg"
                       className="me-2"
                       alt="img"
                     />
                     Logout
-                  </a>
+				  </Link>
                 </div>
               </div>
             </li>
           </ul>
           {/* Header Menu */}
 
-          {/* Mobile Menu  */}
+          {/* Mobile Menu */}
           <div className="dropdown mobile-user-menu">
-            <a
-              href="javascript:void(0);"
+            <Link
+              to="javascript:void(0);"
               className="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fa fa-ellipsis-v"></i>
-            </a>
+            </Link>
             <div className="dropdown-menu dropdown-menu-right">
-              <a className="dropdown-item" href="profile.html">
+              <Link className="dropdown-item" to="/profile">
                 My Profile
-              </a>
-              <a className="dropdown-item" href="generalsettings.html">
+              </Link>
+              <Link className="dropdown-item" to="/generalsettings">
                 Settings
-              </a>
-              <a className="dropdown-item" href="signin.html">
+              </Link>
+			  <Link to ="/signin" className="dropdown-item"></Link>
+              <Link className="dropdown-item" to="/signin">
                 Logout
-              </a>
+              </Link>
             </div>
           </div>
-          {/* Mobile Menu  */}
+          {/* Mobile Menu */}
         </div>
         {/* Header */}
 
@@ -337,497 +340,497 @@ const Components = () => {
             <div id="sidebar-menu" className="sidebar-menu">
               <ul>
                 <li>
-                  <a href="index.html">
+                  <Link to="/home">
                     <img src="assets/img/icons/dashboard.svg" alt="img" />
                     <span> Dashboard</span>{" "}
-                  </a>
+                  </Link>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/product.svg" alt="img" />
                     <span> Product</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="productlist.html">Product List</a>
+                      <Link to="/productlist">Product List</Link>
                     </li>
                     <li>
-                      <a href="addproduct.html">Add Product</a>
+                      <Link to="/addproduct">Add Product</Link>
                     </li>
                     <li>
-                      <a href="categorylist.html">Category List</a>
+                      <Link to="/categorylist">Category List</Link>
                     </li>
                     <li>
-                      <a href="addcategory.html" className="active">
-                        Add Category
-                      </a>
+                      <Link to="/addcategory">Add Category</Link>
                     </li>
                     <li>
-                      <a href="subcategorylist.html">Sub Category List</a>
+                      <Link to="/subcategorylist">Sub Category List</Link>
                     </li>
                     <li>
-                      <a href="subaddcategory.html">Add Sub Category</a>
+                      <Link to="/subaddcategory">Add Sub Category</Link>
                     </li>
                     <li>
-                      <a href="brandlist.html">Brand List</a>
+                      <Link to="/brandlist">Brand List</Link>
                     </li>
                     <li>
-                      <a href="addbrand.html">Add Brand</a>
+                      <Link to="/addbrand">Add Brand</Link>
                     </li>
                     <li>
-                      <a href="importproduct.html">Import Products</a>
+                      <Link to="/importproduct">Import Products</Link>
                     </li>
                     <li>
-                      <a href="barcode.html">Print Barcode</a>
+                      <Link to="/barcode">Print Barcode</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/sales1.svg" alt="img" />
                     <span> Sales</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="saleslist.html">Sales List</a>
+                      <Link to="/saleslist">Sales List</Link>
                     </li>
                     <li>
-                      <a href="pos.html">POS</a>
+                      <Link to="/pos">POS</Link>
                     </li>
                     <li>
-                      <a href="pos.html">New Sales</a>
+                      <Link to="/pos">New Sales</Link>
                     </li>
                     <li>
-                      <a href="salesreturnlists.html">Sales Return List</a>
+                      <Link to="/salesreturnlists">Sales Return List</Link>
                     </li>
                     <li>
-                      <a href="createsalesreturns.html">New Sales Return</a>
+                      <Link to="/createsalesreturns">New Sales Return</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/purchase1.svg" alt="img" />
                     <span> Purchase</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="purchaselist.html">Purchase List</a>
+                      <Link to="/purchaselist">Purchase List</Link>
                     </li>
                     <li>
-                      <a href="addpurchase.html">Add Purchase</a>
+                      <Link to="/addpurchase">Add Purchase</Link>
                     </li>
                     <li>
-                      <a href="importpurchase.html">Import Purchase</a>
+                      <Link to="/importpurchase">Import Purchase</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/expense1.svg" alt="img" />
                     <span> Expense</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="expenselist.html">Expense List</a>
+                      <Link to="/expenselist">Expense List</Link>
                     </li>
                     <li>
-                      <a href="createexpense.html">Add Expense</a>
+                      <Link to="/createexpense">Add Expense</Link>
                     </li>
                     <li>
-                      <a href="expensecategory.html">Expense Category</a>
+                      <Link to="/expensecategory">Expense Category</Link>
                     </li>
                   </ul>
                 </li>
 
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/quotation1.svg" alt="img" />
                     <span> Quotation</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="quotationList.html">Quotation List</a>
+                      <Link to="/quotationlist">Quotation List</Link>
                     </li>
                     <li>
-                      <a href="addquotation.html">Add Quotation</a>
+                      <Link to="/addquotation">Add Quotation</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/transfer1.svg" alt="img" />
                     <span> Transfer</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="transferlist.html">Transfer List</a>
+                      <Link to="/transferlist">Transfer List</Link>
                     </li>
                     <li>
-                      <a href="addtransfer.html">Add Transfer </a>
+                      <Link to="/addtransfer">Add Transfer </Link>
                     </li>
                     <li>
-                      <a href="importtransfer.html">Import Transfer </a>
+                      <Link to="/importtransfer">Import Transfer </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/return1.svg" alt="img" />
                     <span> Return</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="salesreturnlist.html">Sales Return List</a>
+                      <Link to="/salesreturnlist">Sales Return List</Link>
                     </li>
                     <li>
-                      <a href="createsalesreturn.html">Add Sales Return </a>
+                      <Link to="/createsalesreturn">Add Sales Return </Link>
                     </li>
                     <li>
-                      <a href="purchasereturnlist.html">Purchase Return List</a>
+                      <Link to="/purchasereturnlist">Purchase Return List</Link>
                     </li>
                     <li>
-                      <a href="createpurchasereturn.html">
+                      <Link to="/createpurchasereturn">
                         Add Purchase Return{" "}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/users1.svg" alt="img" />
                     <span> People</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="customerlist.html">Customer List</a>
+                      <Link to="/customerlist">Customer List</Link>
                     </li>
                     <li>
-                      <a href="addcustomer.html">Add Customer </a>
+                      <Link to="/addcustomer">Add Customer </Link>
                     </li>
                     <li>
-                      <a href="supplierlist.html">Supplier List</a>
+                      <Link to="/supplierlist">Supplier List</Link>
                     </li>
                     <li>
-                      <a href="addsupplier.html">Add Supplier </a>
+                      <Link to="/addsupplier">Add Supplier </Link>
                     </li>
                     <li>
-                      <a href="userlist.html">User List</a>
+                      <Link to="/userlist">User List</Link>
                     </li>
                     <li>
-                      <a href="adduser.html">Add User</a>
+                      <Link to="/adduser">Add User</Link>
                     </li>
                     <li>
-                      <a href="storelist.html">Store List</a>
+                      <Link to="/storelist">Store List</Link>
                     </li>
                     <li>
-                      <a href="addstore.html">Add Store</a>
+                      <Link to="/addstore">Add Store</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/places.svg" alt="img" />
                     <span> Places</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="newcountry.html">New Country</a>
+                      <Link to="/newcountry">New Country</Link>
                     </li>
                     <li>
-                      <a href="countrieslist.html">Countries list</a>
+                      <Link to="/countrieslist">Countries list</Link>
                     </li>
                     <li>
-                      <a href="newstate.html">New State </a>
+                      <Link to="/newstate">New State </Link>
                     </li>
                     <li>
-                      <a href="statelist.html">State list</a>
+                      <Link to="/statelist">State list</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="components.html">
+                  <Link to="/components">
                     <i data-feather="layers"></i>
                     <span> Components</span>{" "}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="blankpage.html">
+                  <Link to="/blankpage">
                     <i data-feather="file"></i>
                     <span> Blank Page</span>{" "}
-                  </a>
+                  </Link>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="alert-octagon"></i>{" "}
                     <span> Error Pages </span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="error-404.html">404 Error </a>
+                      <Link to="/error-404">404 Error </Link>
                     </li>
                     <li>
-                      <a href="error-500.html">500 Error </a>
+                      <Link to="/error-500">500 Error </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="box"></i> <span>Elements </span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="sweetalerts.html">Sweet Alerts</a>
+                      <Link to="/sweetalerts">Sweet Alerts</Link>
                     </li>
                     <li>
-                      <a href="tooltip.html">Tooltip</a>
+                      <Link to="/tooltip">Tooltip</Link>
                     </li>
                     <li>
-                      <a href="popover.html">Popover</a>
+                      <Link to="/popover">Popover</Link>
                     </li>
                     <li>
-                      <a href="ribbon.html">Ribbon</a>
+                      <Link to="/ribbon">Ribbon</Link>
                     </li>
                     <li>
-                      <a href="clipboard.html">Clipboard</a>
+                      <Link to="/clipboard">Clipboard</Link>
                     </li>
                     <li>
-                      <a href="drag-drop.html">Drag & Drop</a>
+                      <Link to="drag-drop">Drag & Drop</Link>
                     </li>
                     <li>
-                      <a href="rangeslider.html">Range Slider</a>
+                      <Link to="rangeslider.html">Range Slider</Link>
                     </li>
                     <li>
-                      <a href="rating.html">Rating</a>
+                      <Link to="/rating">Rating</Link>
                     </li>
                     <li>
-                      <a href="toastr.html">Toastr</a>
+                      <Link to="/toastr">Toastr</Link>
                     </li>
                     <li>
-                      <a href="text-editor.html">Text Editor</a>
+                      <Link to="/text-editor">Text Editor</Link>
                     </li>
                     <li>
-                      <a href="counter.html">Counter</a>
+                      <Link to="/counter">Counter</Link>
                     </li>
                     <li>
-                      <a href="scrollbar.html">Scrollbar</a>
+                      <Link to="/scrollbar">Scrollbar</Link>
                     </li>
                     <li>
-                      <a href="spinner.html">Spinner</a>
+                      <Link to="/spinner">Spinner</Link>
                     </li>
                     <li>
-                      <a href="notification.html">Notification</a>
+                      <Link to="/notification">Notification</Link>
                     </li>
                     <li>
-                      <a href="lightbox.html">Lightbox</a>
+                      <Link to="/lightbox">Lightbox</Link>
                     </li>
                     <li>
-                      <a href="stickynote.html">Sticky Note</a>
+                      <Link to="/stickynote">Sticky Note</Link>
                     </li>
                     <li>
-                      <a href="timeline.html">Timeline</a>
+                      <Link to="/timeline">Timeline</Link>
                     </li>
                     <li>
-                      <a href="form-wizard.html">Form Wizard</a>
+                      <Link to="/form-wizard">Form Wizard</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="bar-chart-2"></i> <span> Charts </span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="chart-apex.html">Apex Charts</a>
+                      <Link to="/chart-apex">Apex Charts</Link>
                     </li>
                     <li>
-                      <a href="chart-js.html">Chart Js</a>
+                      <Link to="/chart-js">Chart Js</Link>
                     </li>
                     <li>
-                      <a href="chart-morris.html">Morris Charts</a>
+                      <Link to="/chart-morris">Morris Charts</Link>
                     </li>
                     <li>
-                      <a href="chart-flot.html">Flot Charts</a>
+                      <Link to="/chart-flot">Flot Charts</Link>
                     </li>
                     <li>
-                      <a href="chart-peity.html">Peity Charts</a>
+                      <Link to="/chart-peity">Peity Charts</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="award"></i>
                     <span> Icons </span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="icon-fontawesome.html">Fontawesome Icons</a>
+                      <Link to="/icon-fontawesome">Fontawesome Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-feather.html">Feather Icons</a>
+                      <Link to="/icon-feather">Feather Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-ionic.html">Ionic Icons</a>
+                      <Link to="/icon-ionic">Ionic Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-material.html">Material Icons</a>
+                      <Link to="/icon-material">Material Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-pe7.html">Pe7 Icons</a>
+                      <Link to="/icon-pe7">Pe7 Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-simpleline.html">Simpleline Icons</a>
+                      <Link to="/icon-simpleline">Simpleline Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-themify.html">Themify Icons</a>
+                      <Link to="/icon-themify">Themify Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-weather.html">Weather Icons</a>
+                      <Link to="/icon-weather">Weather Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-typicon.html">Typicon Icons</a>
+                      <Link to="/icon-typicon">Typicon Icons</Link>
                     </li>
                     <li>
-                      <a href="icon-flag.html">Flag Icons</a>
+                      <Link to="/icon-flag">Flag Icons</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="columns"></i> <span> Forms </span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="form-basic-inputs.html">Basic Inputs </a>
+                      <Link to="/form-basicinputs">Basic Inputs </Link>
                     </li>
                     <li>
-                      <a href="form-input-groups.html">Input Groups </a>
+                      <Link to="/form-inputgroups">Input Groups </Link>
                     </li>
                     <li>
-                      <a href="form-horizontal.html">Horizontal Form </a>
+                      <Link to="/form-horizontal">Horizontal Form </Link>
                     </li>
                     <li>
-                      <a href="form-vertical.html"> Vertical Form </a>
+                      <Link to="/form-vertical"> Vertical Form </Link>
                     </li>
                     <li>
-                      <a href="form-mask.html">Form Mask </a>
+                      <Link to="/form-mask">Form Mask </Link>
                     </li>
                     <li>
-                      <a href="form-validation.html">Form Validation </a>
+                      <Link to="/form-validation">Form Validation </Link>
                     </li>
                     <li>
-                      <a href="form-select2.html">Form Select2 </a>
+                      <Link to="/form-select2">Form Select2 </Link>
                     </li>
                     <li>
-                      <a href="form-fileupload.html">File Upload </a>
+                      <Link to="/form-fileupload">File Upload </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <i data-feather="layout"></i> <span> Table </span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="tables-basic.html">Basic Tables </a>
+                      <Link to="/tables-basic">Basic Tables </Link>
                     </li>
                     <li>
-                      <a href="data-tables.html">Data Table </a>
+                      <Link to="/datatables">Data Table </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/product.svg" alt="img" />
                     <span> Application</span>{" "}
                     <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="chat.html">Chat</a>
+                      <Link to="/chat">Chat</Link>
                     </li>
                     <li>
-                      <a href="calendar.html">Calendar</a>
+                      <Link to="/calendar">Calendar</Link>
                     </li>
                     <li>
-                      <a href="email.html">Email</a>
+                      <Link to="/email">Email</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/time.svg" alt="img" />
                     <span> Report</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="purchaseorderreport.html">
+                      <Link to="/purchaseorderreport">
                         Purchase order report
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="inventoryreport.html">Inventory Report</a>
+                      <Link to="/inventoryreport">Inventory Report</Link>
                     </li>
                     <li>
-                      <a href="salesreport.html">Sales Report</a>
+                      <Link to="/salesreport">Sales Report</Link>
                     </li>
                     <li>
-                      <a href="invoicereport.html">Invoice Report</a>
+                      <Link to="/invoicereport">Invoice Report</Link>
                     </li>
                     <li>
-                      <a href="purchasereport.html">Purchase Report</a>
+                      <Link to="/purchasereport">Purchase Report</Link>
                     </li>
                     <li>
-                      <a href="supplierreport.html">Supplier Report</a>
+                      <Link to="/supplierreport">Supplier Report</Link>
                     </li>
                     <li>
-                      <a href="customerreport.html">Customer Report</a>
+                      <Link to="/customerreport">Customer Report</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/users1.svg" alt="img" />
                     <span> Users</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="newuser.html">New User </a>
+                      <Link to="/newuser">New User </Link>
                     </li>
                     <li>
-                      <a href="userlists.html">Users List</a>
+                      <Link to="/userlists">Users List</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="submenu">
-                  <a href="javascript:void(0);">
+                  <Link to="javascript:void(0);">
                     <img src="assets/img/icons/settings.svg" alt="img" />
                     <span> Settings</span> <span className="menu-arrow"></span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="generalsettings.html">General Settings</a>
+                      <Link to="/generalsettings" className="active">
+                        General Settings
+                      </Link>
                     </li>
                     <li>
-                      <a href="emailsettings.html">Email Settings</a>
+                      <Link to="/emailsettings">Email Settings</Link>
                     </li>
 
                     <li>
-                      <a href="paymentsettings.html">Payment Settings</a>
+                      <Link to="/paymentsettings">Payment Settings</Link>
                     </li>
                     <li>
-                      <a href="currencysettings.html">Currency Settings</a>
+                      <Link to="/currencysettings">Currency Settings</Link>
                     </li>
                     <li>
-                      <a href="grouppermissions.html">Group Permissions</a>
+                      <Link to="/grouppermissions">Group Permissions</Link>
                     </li>
                     <li>
-                      <a href="taxrates.html">Tax Rates</a>
+                      <Link to="/taxrates">Tax Rates</Link>
                     </li>
                   </ul>
                 </li>
@@ -835,7 +838,7 @@ const Components = () => {
             </div>
           </div>
         </div>
-        {/* Sidebar */}
+      {/* Sidebar */}
 
         <div className="page-wrapper">
 					<div className="content">
@@ -997,14 +1000,14 @@ const Components = () => {
 										</nav>
 										<nav aria-label="breadcrumb">
 											<ol className="breadcrumb">
-												<li className="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+												<li className="breadcrumb-item"><Link to="javascript:void(0);">Home</Link></li>
 												<li className="breadcrumb-item active" aria-current="page">Products</li>
 											</ol>
 										</nav>
 										<nav aria-label="breadcrumb">
 											<ol className="breadcrumb mb-0">
-												<li className="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
-												<li className="breadcrumb-item"><a href="javascript:void(0);">Products</a></li>
+												<li className="breadcrumb-item"><Link to="javascript:void(0);">Home</Link></li>
+												<li className="breadcrumb-item"><Link to="javascript:void(0);">Products</Link></li>
 												<li className="breadcrumb-item active" aria-current="page">Accessories</li>
 											</ol>
 										</nav>
@@ -1247,8 +1250,8 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a className="card-link" href="javascript:void(0);">Card link</a>
-												<a className="card-link" href="javascript:void(0);">Another link</a>
+												<Link className="card-link" to="javascript:void(0);">Card link</Link>
+												<Link className="card-link" to="javascript:void(0);">Another link</Link>
 											</div>
 										</div>
 									</div>
@@ -1261,7 +1264,7 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+												<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 											</div>
 										</div>
 									</div>
@@ -1288,8 +1291,8 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a className="card-link" href="javascript:void(0);">Card link</a>
-												<a className="card-link" href="javascript:void(0);">Another link</a>
+												<Link className="card-link" to="javascript:void(0);">Card link</Link>
+												<Link className="card-link" to="javascript:void(0);">Another link</Link>
 											</div>
 										</div>
 									</div>
@@ -1301,7 +1304,7 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+												<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 											</div>
 										</div>
 									</div>
@@ -1341,13 +1344,13 @@ const Components = () => {
 											<div className="card-header">
 												<ul role="tablist" className="nav nav-tabs card-header-tabs float-right">
 													<li className="nav-item">
-														<a href="#tab-1" data-bs-toggle="tab" className="nav-link active">Active</a>
+														<Link to="#tab-1" data-bs-toggle="tab" className="nav-link active">Active</Link>
 													</li>
 													<li className="nav-item">
-														<a href="#tab-2" data-bs-toggle="tab" className="nav-link">Link</a>
+														<Link to="#tab-2" data-bs-toggle="tab" className="nav-link">Link</Link>
 													</li>
 													<li className="nav-item">
-														<a href="#tab-3" data-bs-toggle="tab" className="nav-link disabled">Disabled</a>
+														<Link to="#tab-3" data-bs-toggle="tab" className="nav-link disabled">Disabled</Link>
 													</li>
 												</ul>
 											</div>
@@ -1356,17 +1359,17 @@ const Components = () => {
 													<div role="tabpanel" id="tab-1" className="tab-pane fade show active">
 														<h5 className="card-title">Card with tabs</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 													<div role="tabpanel" id="tab-2" className="tab-pane fade text-center">
 														<h5 className="card-title">Card with tabs</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 													<div role="tabpanel" id="tab-3" className="tab-pane fade">
 														<h5 className="card-title">Card with tabs</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 												</div>
 											</div>
@@ -1377,13 +1380,13 @@ const Components = () => {
 											<div className="card-header">
 												<ul role="tablist" className="nav nav-pills card-header-pills float-right">
 													<li className="nav-item">
-														<a href="#tab-4" data-bs-toggle="tab" className="nav-link active">Active</a>
+														<Link to="#tab-4" data-bs-toggle="tab" className="nav-link active">Active</Link>
 													</li>
 													<li className="nav-item">
-														<a href="#tab-5" data-bs-toggle="tab" className="nav-link">Link</a>
+														<Link to="#tab-5" data-bs-toggle="tab" className="nav-link">Link</Link>
 													</li>
 													<li className="nav-item">
-														<a href="#tab-6" data-bs-toggle="tab" className="nav-link disabled">Disabled</a>
+														<Link to="#tab-6" data-bs-toggle="tab" className="nav-link disabled">Disabled</Link>
 													</li>
 												</ul>
 											</div>
@@ -1392,17 +1395,17 @@ const Components = () => {
 													<div role="tabpanel" id="tab-4" className="tab-pane fade show active">
 														<h5 className="card-title">Card with pills</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 													<div role="tabpanel" id="tab-5" className="tab-pane fade text-center">
 														<h5 className="card-title">Card with pills</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 													<div role="tabpanel" id="tab-6" className="tab-pane fade">
 														<h5 className="card-title">Card with pills</h5>
 														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-														<a className="btn btn-primary" href="javascript:void(0);">Go somewhere</a>
+														<Link className="btn btn-primary" to="javascript:void(0);">Go somewhere</Link>
 													</div>
 												</div>
 											</div>
@@ -1422,10 +1425,10 @@ const Components = () => {
 									<div className="card-body">
 										<h5 className="card-title">Dropdowns within Text</h5>
 										<div className="dropdown">
-											<a className="dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+											<Link className="dropdown-toggle" to="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </Link>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 											</div>
 										</div>
 										<hr />
@@ -1433,55 +1436,55 @@ const Components = () => {
 										<div className="btn-group">
 											<button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
 											<button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
 											<button type="button" className="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
 											<button type="button" className="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
 											<button type="button" className="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
 											<button type="button" className="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<hr />
@@ -1492,10 +1495,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
@@ -1504,10 +1507,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
@@ -1516,10 +1519,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
@@ -1528,10 +1531,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
@@ -1540,10 +1543,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 										<div className="btn-group">
@@ -1552,10 +1555,10 @@ const Components = () => {
 												<span className="sr-only">Toggle Dropdown</span>
 											</button>
 											<div className="dropdown-menu">
-												<a className="dropdown-item" href="javascript:void(0);">Action</a>
-												<a className="dropdown-item" href="javascript:void(0);">Another action</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Action</Link>
+												<Link className="dropdown-item" to="javascript:void(0);">Another action</Link>
 												<div className="dropdown-divider"></div>
-												<a className="dropdown-item" href="javascript:void(0);">Separated link</a>
+												<Link className="dropdown-item" to="javascript:void(0);">Separated link</Link>
 											</div>
 										</div>
 									</div>
@@ -1574,49 +1577,49 @@ const Components = () => {
 										<div>
 											<ul className="pagination mb-4">
 												<li className="page-item disabled">
-													<a className="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+													<Link className="page-link" to="javascript:void(0);" tabindex="-1">Previous</Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">1</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">1</Link></li>
 												<li className="page-item active">
-													<a className="page-link" href="javascript:void(0);">2 <span className="sr-only">(current)</span></a>
+													<Link className="page-link" to="javascript:void(0);">2 <span className="sr-only">(current)</span></Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">3</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">3</Link></li>
 												<li className="page-item">
-													<a className="page-link" href="javascript:void(0);">Next</a>
+													<Link className="page-link" to="javascript:void(0);">Next</Link>
 												</li>
 											</ul>
 										</div>
 										<div>
 											<ul className="pagination mb-4">
 												<li className="page-item">
-													<a className="page-link" href="javascript:void(0);" aria-label="Previous">
+													<Link className="page-link" to="javascript:void(0);" aria-label="Previous">
 														<span aria-hidden="true">«</span>
 														<span className="sr-only">Previous</span>
-													</a>
+													</Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">1</a></li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">2</a></li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">3</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">1</Link></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">2</Link></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">3</Link></li>
 												<li className="page-item">
-													<a className="page-link" href="javascript:void(0);" aria-label="Next">
+													<Link className="page-link" to="javascript:void(0);" aria-label="Next">
 														<span aria-hidden="true">»</span>
 													<span className="sr-only">Next</span>
-													</a>
+													</Link>
 												</li>
 											</ul>
 										</div>
 										<div>
 											<ul className="pagination pagination-lg mb-4">
 												<li className="page-item disabled">
-													<a className="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+													<Link className="page-link" to="javascript:void(0);" tabindex="-1">Previous</Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">1</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">1</Link></li>
 												<li className="page-item active">
-													<a className="page-link" href="javascript:void(0);">2 <span className="sr-only">(current)</span></a>
+													<Link className="page-link" to="javascript:void(0);">2 <span className="sr-only">(current)</span></Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">3</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">3</Link></li>
 												<li className="page-item">
-													<a className="page-link" href="javascript:void(0);">Next</a>
+													<Link className="page-link" to="javascript:void(0);">Next</Link>
 												</li>
 											</ul>
 										</div>
@@ -1624,15 +1627,15 @@ const Components = () => {
 										<div>
 											<ul className="pagination pagination-sm mb-0">
 												<li className="page-item disabled">
-													<a className="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+													<Link className="page-link" to="javascript:void(0);" tabindex="-1">Previous</Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">1</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">1</Link></li>
 												<li className="page-item active">
-													<a className="page-link" href="javascript:void(0);">2 <span className="sr-only">(current)</span></a>
+													<Link className="page-link" to="javascript:void(0);">2 <span className="sr-only">(current)</span></Link>
 												</li>
-												<li className="page-item"><a className="page-link" href="javascript:void(0);">3</a></li>
+												<li className="page-item"><Link className="page-link" to="javascript:void(0);">3</Link></li>
 												<li className="page-item">
-													<a className="page-link" href="javascript:void(0);">Next</a>
+													<Link className="page-link" to="javascript:void(0);">Next</Link>
 												</li>
 											</ul>
 										</div>
@@ -1891,9 +1894,9 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs">
-													<li className="nav-item"><a className="nav-link active" href="#basictab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#basictab2" data-bs-toggle="tab">Profile</a></li>
-													<li className="nav-item"><a className="nav-link" href="#basictab3" data-bs-toggle="tab">Messages</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#basictab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#basictab2" data-bs-toggle="tab">Profile</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#basictab3" data-bs-toggle="tab">Messages</Link></li>
 												</ul>
 												<div className="tab-content">
 													<div className="tab-pane show active" id="basictab1">
@@ -1916,13 +1919,13 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs nav-justified">
-													<li className="nav-item"><a className="nav-link active" href="#basic-justified-tab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#basic-justified-tab2" data-bs-toggle="tab">Profile</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#basic-justified-tab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#basic-justified-tab2" data-bs-toggle="tab">Profile</Link></li>
 													<li className="nav-item dropdown">
-														<a href="javascript:void(0);" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">Dropdown</a>
+														<Link to="javascript:void(0);" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">Dropdown</Link>
 														<div className="dropdown-menu dropdown-menu-right">
-															<a className="dropdown-item" href="#basic-justified-tab3" data-bs-toggle="tab">Dropdown 1</a>
-															<a className="dropdown-item" href="#basic-justified-tab4" data-bs-toggle="tab">Dropdown 2</a>
+															<Link className="dropdown-item" to="#basic-justified-tab3" data-bs-toggle="tab">Dropdown 1</Link>
+															<Link className="dropdown-item" to="#basic-justified-tab4" data-bs-toggle="tab">Dropdown 2</Link>
 														</div>
 													</li>
 												</ul>
@@ -1953,9 +1956,9 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs nav-tabs-solid">
-													<li className="nav-item"><a className="nav-link active" href="#solid-tab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-tab2" data-bs-toggle="tab">Profile</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-tab3" data-bs-toggle="tab">Messages</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#solid-tab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-tab2" data-bs-toggle="tab">Profile</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-tab3" data-bs-toggle="tab">Messages</Link></li>
 												</ul>
 												<div className="tab-content">
 													<div className="tab-pane show active" id="solid-tab1">
@@ -1979,9 +1982,9 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs nav-tabs-solid nav-justified">
-													<li className="nav-item"><a className="nav-link active" href="#solid-justified-tab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-justified-tab2" data-bs-toggle="tab">Profile</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-justified-tab3" data-bs-toggle="tab">Messages</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#solid-justified-tab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-justified-tab2" data-bs-toggle="tab">Profile</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-justified-tab3" data-bs-toggle="tab">Messages</Link></li>
 												</ul>
 												<div className="tab-content">
 													<div className="tab-pane show active" id="solid-justified-tab1">
@@ -2006,9 +2009,9 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
-													<li className="nav-item"><a className="nav-link active" href="#solid-rounded-tab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-rounded-tab2" data-bs-toggle="tab">Profile</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-rounded-tab3" data-bs-toggle="tab">Messages</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#solid-rounded-tab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-rounded-tab2" data-bs-toggle="tab">Profile</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-rounded-tab3" data-bs-toggle="tab">Messages</Link></li>
 												</ul>
 												<div className="tab-content">
 													<div className="tab-pane show active" id="solid-rounded-tab1">
@@ -2031,9 +2034,9 @@ const Components = () => {
 											</div>
 											<div className="card-body">
 												<ul className="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
-													<li className="nav-item"><a className="nav-link active" href="#solid-rounded-justified-tab1" data-bs-toggle="tab">Home</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-rounded-justified-tab2" data-bs-toggle="tab">Profile</a></li>
-													<li className="nav-item"><a className="nav-link" href="#solid-rounded-justified-tab3" data-bs-toggle="tab">Messages</a></li>
+													<li className="nav-item"><Link className="nav-link active" to="#solid-rounded-justified-tab1" data-bs-toggle="tab">Home</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-rounded-justified-tab2" data-bs-toggle="tab">Profile</Link></li>
+													<li className="nav-item"><Link className="nav-link" to="#solid-rounded-justified-tab3" data-bs-toggle="tab">Messages</Link></li>
 												</ul>
 												<div className="tab-content">
 													<div className="tab-pane show active" id="solid-rounded-justified-tab1">
@@ -2134,16 +2137,16 @@ const Components = () => {
 												<h5 className="card-title">Coloured text</h5>
 											</div>
 											<div className="card-body">
-												<p><a href="javascript:void(0);" className="text-primary">Primary link</a></p>
-												<p><a href="javascript:void(0);" className="text-secondary">Secondary link</a></p>
-												<p><a href="javascript:void(0);" className="text-success">Success link</a></p>
-												<p><a href="javascript:void(0);" className="text-danger">Danger link</a></p>
-												<p><a href="javascript:void(0);" className="text-warning">Warning link</a></p>
-												<p><a href="javascript:void(0);" className="text-info">Info link</a></p>
-												<p><a href="javascript:void(0);" className="text-light bg-dark">Light link</a></p>
-												<p><a href="javascript:void(0);" className="text-dark">Dark link</a></p>
-												<p><a href="javascript:void(0);" className="text-muted">Muted link</a></p>
-												<p><a href="javascript:void(0);" className="text-white bg-dark mb-0">White link</a></p>
+												<p><Link to="javascript:void(0);" className="text-primary">Primary link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-secondary">Secondary link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-success">Success link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-danger">Danger link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-warning">Warning link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-info">Info link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-light bg-dark">Light link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-dark">Dark link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-muted">Muted link</Link></p>
+												<p><Link to="javascript:void(0);" className="text-white bg-dark mb-0">White link</Link></p>
 											</div>
 										</div>
 									</div>

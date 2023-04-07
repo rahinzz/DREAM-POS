@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -13,9 +14,9 @@ const Signup = () => {
                             <div className="login-logo logo-normal">
                                 <img src="assets/img/logo.png" alt="img" />
                             </div>
-							<a href="index.html" className="login-logo logo-white">
+							<Link to="/home" className="login-logo logo-white">
 								<img src="assets/img/logo-white.png"  alt="" />
-							</a>
+							</Link>
                             <div className="login-userheading">
                                 <h3>Create an Account</h3>
                                 <h4>Continue where you left off</h4>
@@ -42,10 +43,10 @@ const Signup = () => {
                                 </div>
                             </div>
                             <div className="form-login">
-                                <a className="btn btn-login">Sign Up</a>
+                                <Link to="/home" className="btn btn-login">Sign Up</Link>
                             </div>
                             <div className="signinform text-center">
-                                <h4>Already a user? <a href="signin.html" className="hover-a">Sign In</a></h4>
+                                <h4>Already a user? <Link to="/signin" className="hover-a">Sign In</Link></h4>
                             </div>
                             <div className="form-setlogin">
                                 <h4>Or sign up with</h4>
@@ -53,16 +54,16 @@ const Signup = () => {
                             <div className="form-sociallink">
                                 <ul>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <Link to="javascript:void(0);">
                                             <img src="assets/img/icons/google.png" className="me-2" alt="google" />
                                             Sign Up using Google
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <Link to="javascript:void(0);">
                                             <img src="assets/img/icons/facebook.png" className="me-2" alt="google" />
                                             Sign Up using Facebook
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

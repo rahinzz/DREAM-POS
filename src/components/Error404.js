@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Error404 = () => {
   return (
@@ -19,9 +20,9 @@ const Error404 = () => {
               <p className="h4 font-weight-normal">
                 The page you requested was not found.
               </p>
-              <a href="index.html" className="btn btn-primary">
+              <Link to="/home" className="btn btn-primary">
                 Back to Home
-              </a>
+              </Link>
             </div>
           </div>
           {/* /Main Wrapper  */}

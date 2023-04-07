@@ -115,132 +115,180 @@ import CurrencySettings from "./components/CurrencySettings";
 import GroupPermissions from "./components/GroupPermissions";
 import TaxRates from "./components/TaxRates";
 
+import ProductDetails from "./components/ProductDetails";
+import EditProduct from "./components/EditProduct";
+import EditCategory from "./components/EditCategory";
+import EditSubCategory from "./components/EditSubCategory";
+import EditBrand from "./components/EditBrand";
+import AddSales from "./components/AddSales";
+import SalesDetails from "./components/SalesDetails";
+import EditSales from "./components/EditSales";
+import EditPurchase from "./components/EditPurchase";
+import EditSalesReturns from "./components/EditSalesReturns";
+import EditExpense from "./components/EditExpense";
+import EditQuotation from "./components/EditQuotation";
+import EditTransfer from "./components/EditTransfer";
+import EditSalesReturn from "./components/EditSalesReturn";
+import EditPurchaseReturn from "./components/EditPurchaseReturn";
+import EditCustomer from "./components/EditCustomer";
+import EditSupplier from "./components/EditSupplier";
+import EditUser from "./components/EditUser";
+import EditStore from "./components/EditStore";
+import EditCountry from "./components/EditCountry";
+import EditState from "./components/EditState";
+import NewUserEdit from "./components/NewUserEdit";
+import CreatePermission from "./components/CreatePermission";
+import EditPermission from "./components/EditPermission";
+
 function App() {
   return (
     <>
-      {/* <ForgetPassword /> */}
-      {/* <Signin /> */}
-      {/* <Profile /> */}
-      {/* <GeneralSettings /> */}
-      {/* <Activities /> */}
-      {/* <ProductList /> */}
-      {/* <AddProduct />  */}
-      {/* <CategoryList /> */}
-      {/* <AddCategory /> */}
-      {/* <SubCategoryList /> */}
-      {/* <SubAddCategory /> */}
-      {/* <BrandList /> */}
-      {/* <AddBrand /> */}
-      {/* <ImportProduct /> */}
-      {/* <Barcode /> */}
-      {/* <SalesList /> */}
-      {/* <Pos /> */}
-      {/* <SalesReturnLists /> */}
-      {/* <CreateSalesReturns /> */}
-      {/* <PurchaseList /> */}
-      {/* <AddPurchase /> */}
-      {/* <ImportPurchase /> */}
-      {/* <ExpenseList /> */}
-      {/* <CreateExpense /> */}
-      {/* <ExpenseCategory /> */}
-      {/* <QuotationList /> */}
-      {/* <AddQuotation /> */}
-      {/* <TransferList /> */}
-      {/* <AddTransfer /> */}
-      {/* <ImportTransfer /> */}
-      {/* <SalesReturnList /> */}
-      {/* <CreateSalesReturn /> */}
-      {/* <PurchaseReturnList /> */}
-      {/* <CreatePurchaseReturn /> */}
-      {/* <CustomerList /> */}
-      {/* <AddCustomer /> */}
-      {/* <SupplierList /> */}
-      {/* <AddSupplier /> */}
-      {/* <UserList /> */}
-      {/* <AddUser /> */}
-      {/* <StoreList /> */}
-      {/* <AddStore /> */}
-      {/* <NewCountry /> */}
-      {/* <CountriesList /> */}
-      {/* <NewState /> */}
-      {/* <StateList /> */}
-      {/* <Components /> */}
-      {/* <BlankPage /> */}
-      {/* <Error404 /> */}
-      {/* <Error500 /> */}
-      {/* <SweetAlerts /> */}
-      {/* <ToolTip /> */}
-      {/* <PopOver /> */}
-      {/* <Ribbon /> */}
-      {/* <ClipBoard /> */}
-      {/* <DragDrop /> */}
-      {/* <RangeSlider /> */}
-      {/* <Rating /> */}
-      {/* <Toastr /> */}
-      {/* <TextEditor /> */}
-      {/* <Counter /> */}
-      {/* <ScrollBar /> */}
-      {/* <Spinner /> */}
-      {/* <Notification /> */}
-      {/* <LightBox /> */}
-      {/* <StickyNote /> */}
-      {/* <TimeLine /> */}
-      {/* <FormWizard /> */}
-      {/* <ChartApex /> */}
-      {/* <ChartJS /> */}
-      {/* <ChartMorris /> */}
-      {/* <ChartFlot /> */}
-      {/* <ChartPeity /> */}
-      {/* <IconFontawesome /> */}
-      {/* <IconFeather /> */}
-      {/* <IconIonic /> */}
-      {/* <IconMaterial /> */}
-      {/* <Iconpe7 /> */}
-      {/* <IconSimpleline /> */}
-      {/* <IconThemify /> */}
-      {/* <IconWeather /> */}
-      {/* <IconTypicon /> */}
-      {/* <IconFlag /> */}
-      {/* <FormBasicInputs /> */}
-      {/* <FormInputGroups /> */}
-      {/* <FormHorizontal /> */}
-      {/* <FormVertical /> */}
-      {/* <FormMask /> */}
-      {/* <FormValidation /> */}
-      {/* <FormSelect2 /> */}
-      {/* <FormFileUpload /> */}
-      {/* <TablesBasic /> */}
-      {/* <DataTables /> */}
-      {/* <Chat /> */}
-      {/* <Calendar /> */}
-      {/* <Email /> */}
-      {/* <PurchaseOrderReport /> */}
-      {/* <InventoryReport /> */}
-      {/* <SalesReport /> */}
-      {/* <InvoiceReport /> */}
-      {/* <PurchaseReport /> */}
-      {/* <SupplierReport /> */}
-      {/* <CustomerReport /> */}
-      {/* <NewUser /> */}
-      {/* <UserLists /> */}
-      {/* <GeneralSettings /> */}
-      {/* <EmailSettings /> */}
-      {/* <PaymentSettings /> */}
-      {/* <CurrencySettings /> */}
-      {/* <GroupPermissions /> */}
-      <TaxRates />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/signin" element={<Signin />} />
+          <Route exact path="/forgetpassword" element={<ForgetPassword />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/generalsettings" element={<GeneralSettings />} />
+          <Route exact path="/activities" element={<Activities />} />
+          <Route exact path="/productlist" element={<ProductList />} />
+          <Route exact path="/addproduct" element={<AddProduct />} />
+          <Route exact path="/categorylist" element={<CategoryList />} />
+          <Route exact path="/addcategory" element={<AddCategory />} />
+          <Route exact path="/subcategorylist" element={<SubCategoryList />} />
+          <Route exact path="/subaddcategory" element={<SubAddCategory />} />
+          <Route exact path="/brandlist" element={<BrandList />} />
+          <Route exact path="/addbrand" element={<AddBrand />} />
+          <Route exact path="/importproduct" element={<ImportProduct />} />
+          <Route exact path="/barcode" element={<Barcode />} />
+          <Route exact path="/saleslist" element={<SalesList />} />
+          <Route exact path="/pos" element={<Pos />} />
+          <Route exact path="/salesreturnlists" element={<SalesReturnLists />} />
+          <Route exact path="/createsalesreturns" element={<CreateSalesReturns />} />
+          <Route exact path="/purchaselist" element={<PurchaseList />} />
+          <Route exact path="/addpurchase" element={<AddPurchase />} />
+          <Route exact path="/importpurchase" element={<ImportPurchase />} />
+          <Route exact path="/expenselist" element={<ExpenseList />} />
+          <Route exact path="/createexpense" element={<CreateExpense />} />
+          <Route exact path="/expensecategory" element={<ExpenseCategory />} />
+          <Route exact path="/quotationlist" element={<QuotationList />} />
+          <Route exact path="/addquotation" element={<AddQuotation />} />
+          <Route exact path="/transferlist" element={<TransferList />} />
+          <Route exact path="/addtransfer" element={<AddTransfer />} />
+          <Route exact path="/importtransfer" element={<ImportTransfer />} />
+          <Route exact path="/salesreturnlist" element={<SalesReturnList />} />
+          <Route exact path="/createsalesreturn" element={<CreateSalesReturn />} />
+          <Route exact path="/purchasereturnlist" element={<PurchaseReturnList />} />
+          <Route exact path="/createpurchasereturn" element={<CreatePurchaseReturn />} />
+          <Route exact path="/customerlist" element={<CustomerList />} />
+          <Route exact path="/addcustomer" element={<AddCustomer />} />
+          <Route exact path="/supplierlist" element={<SupplierList />} />
+          <Route exact path="/addsupplier" element={<AddSupplier />} />
+          <Route exact path="/userlist" element={<UserList />} />
+          <Route exact path="/adduser" element={<AddUser />} />
+          <Route exact path="/storelist" element={<StoreList />} />
+          <Route exact path="/addstore" element={<AddStore />} />
+          <Route exact path="/newcountry" element={<NewCountry />} />
+          <Route exact path="/countrieslist" element={<CountriesList />} />
+          <Route exact path="/newstate" element={<NewState />} />
+          <Route exact path="/statelist" element={<StateList />} />
+          <Route exact path="/components" element={<Components />} />
+          <Route exact path="/blankpage" element={<BlankPage />} />
+          <Route exact path="/error-404" element={<Error404 />} />
+          <Route exact path="/error-500" element={<Error500 />} />
+          <Route exact path="/sweetalerts" element={<SweetAlerts />} />
+          <Route exact path="/tooltip" element={<ToolTip />} />
+          <Route exact path="/popover" element={<PopOver />} />
+          <Route exact path="/ribbon" element={<Ribbon />} />
+          <Route exact path="/clipboard" element={<ClipBoard />} />
+          <Route exact path="/drag-drop" element={<DragDrop />} />
+          <Route exact path="/rangeslider" element={<RangeSlider />} />
+          <Route exact path="/rating" element={<Rating />} />
+          <Route exact path="/toastr" element={<Toastr />} />
+          <Route exact path="/text-editor" element={<TextEditor />} />
+          <Route exact path="/counter" element={<Counter />} />
+          <Route exact path="/scrollbar" element={<ScrollBar />} />
+          <Route exact path="/spinner" element={<Spinner />} />
+          <Route exact path="/notification" element={<Notification />} />
+          <Route exact path="/lightbox" element={<LightBox />} />
+          <Route exact path="/stickynote" element={<StickyNote />} />
+          <Route exact path="/timeline" element={<TimeLine />} />
+          <Route exact path="/formwizard" element={<FormWizard />} />
+          <Route exact path="/chart-apex" element={<ChartApex />} />
+          <Route exact path="/chart-js" element={<ChartJS />} />
+          <Route exact path="/chart-morris" element={<ChartMorris />} />
+          <Route exact path="/chart-flot" element={<ChartFlot />} />
+          <Route exact path="/chart-peity" element={<ChartPeity />} />
+          <Route exact path="/icon-font-awesome" element={<IconFontawesome />} />
+          <Route exact path="/icon-feather" element={<IconFeather />} />
+          <Route exact path="/icon-ionic" element={<IconIonic />} />
+          <Route exact path="/icon-material" element={<IconMaterial />} />
+          <Route exact path="/icon-pe7" element={<Iconpe7 />} />
+          <Route exact path="/icon-simpleline" element={<IconSimpleline />} />
+          <Route exact path="/icon-themify" element={<IconThemify />} />
+          <Route exact path="/icon-weather" element={<IconWeather />} />
+          <Route exact path="/icon-typicon" element={<IconTypicon />} />
+          <Route exact path="/icon-flag" element={<IconFlag />} />
+          <Route exact path="/form-basicinputs" element={<FormBasicInputs />} />
+          <Route exact path="/form-inputgroups" element={<FormInputGroups />} />
+          <Route exact path="/form-horizontal" element={<FormHorizontal />} />
+          <Route exact path="/form-vertical" element={<FormVertical />} />
+          <Route exact path="/form-mask" element={<FormMask />} />
+          <Route exact path="/form-validation" element={<FormValidation />} />
+          <Route exact path="/form-select2" element={<FormSelect2 />} />
+          <Route exact path="/form-fileupload" element={<FormFileUpload />} />
+          <Route exact path="/tables-basic" element={<TablesBasic />} />
+          <Route exact path="/datatables" element={<DataTables />} />
+          <Route exact path="/chat" element={<Chat />} />
+          <Route exact path="/calendar" element={<Calendar />} />
+          <Route exact path="/email" element={<Email />} />
+          <Route exact path="/purchaseorderreport" element={<PurchaseOrderReport />} />
+          <Route exact path="/inventoryreport" element={<InventoryReport />} />
+          <Route exact path="/salesreport" element={<SalesReport />} />
+          <Route exact path="/invoicereport" element={<InvoiceReport />} />
+          <Route exact path="/purchasereport" element={<PurchaseReport />} />
+          <Route exact path="/supplierreport" element={<SupplierReport />} />
+          <Route exact path="/customerreport" element={<CustomerReport />} />
+          <Route exact path="/newuser" element={<NewUser />} />
+          <Route exact path="/userlists" element={<UserLists />} />
+          <Route exact path="/generalsettings" element={<GeneralSettings />} />
+          <Route exact path="/emailsettings" element={<EmailSettings />} />
+          <Route exact path="/paymentsettings" element={<PaymentSettings />} />
+          <Route exact path="/currencysettings" element={<CurrencySettings />} />
+          <Route exact path="/grouppermissions" element={<GroupPermissions />} />
+          <Route exact path="/taxrates" element={<TaxRates />} />
 
+
+          <Route exact path="/product-details" element={<ProductDetails />} />
+          <Route exact path="/editproduct" element={<EditProduct />} />
+          <Route exact path="/editcategory" element={<EditCategory />} />
+          <Route exact path="/editsubcategory" element={<EditSubCategory />} />
+          <Route exact path="/editbrand" element={<EditBrand />} />
+          <Route exact path="/add-sales" element={<AddSales />} />
+          <Route exact path="/sales-details" element={<SalesDetails />} />
+          <Route exact path="/edit-sales" element={<EditSales />} />
+          <Route exact path="/editpurchase" element={<EditPurchase />} />
+          <Route exact path="/editsalesreturns" element={<EditSalesReturns />} />
+          <Route exact path="/editexpense" element={<EditExpense />} />
+          <Route exact path="/editquotation" element={<EditQuotation />} />
+          <Route exact path="/edittransfer" element={<EditTransfer />} />
+          <Route exact path="/editsalesreturn" element={<EditSalesReturn />} />
+          <Route exact path="/editpurchasereturn" element={<EditPurchaseReturn />} />
+          <Route exact path="/editcustomer" element={<EditCustomer />} />
+          <Route exact path="/editsupplier" element={<EditSupplier />} />
+          <Route exact path="/edituser" element={<EditUser />} />
+          <Route exact path="/editstore" element={<EditStore />} />
+          <Route exact path="/editcountry" element={<EditCountry />} />
+          <Route exact path="/editstate" element={<EditState />} />
+          <Route exact path="/newuseredit" element={<NewUserEdit />} />
+          <Route exact path="/createpermission" element={<CreatePermission />} />
+          <Route exact path="/editpermission" element={<EditPermission />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
-
-
-{/* <BrowserRouter>
-  <Routes>
-    <Route exact path="/" element={<Home />} />
-    <Route exact path="/home" element={<Home />} />
-    <Route exact path="/signin" element={<Signin />} />
-  </Routes>
-</BrowserRouter> */}

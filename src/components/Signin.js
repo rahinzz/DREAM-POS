@@ -15,9 +15,9 @@ const Signin = () => {
                              <div className="login-logo logo-normal">
                                 <img src="assets/img/logo.png" alt="img" />
                             </div>
-                            <a href="index.html" className="login-logo logo-white">
+                            <Link to="/home" className="login-logo logo-white">
 								<img src="assets/img/logo-white.png"  alt="" />
-							</a>
+							</Link>
                             <div className="login-userheading">
                                 <h3>Sign In</h3>
                                 <h4>Please login to your account</h4>
@@ -38,15 +38,14 @@ const Signin = () => {
                             </div>
                             <div className="form-login">
                                 <div className="alreadyuser">
-                                    <h4><a href="forgetpassword.html" className="hover-a">Forgot Password?</a></h4>
+                                    <h4><Link to="/forgetpassword" className="hover-a">Forgot Password?</Link></h4>
                                 </div>
                             </div>
                             <div className="form-login">
                                 <Link to="/home" className="btn btn-login">Sign In</Link>
-                                {/* <a className="btn btn-login" href="index.html">Sign In</a> */}
                             </div>
                             <div className="signinform text-center">
-                                <h4>Don’t have an account? <a href="signup.html" className="hover-a">Sign Up</a></h4>
+                                <h4>Don’t have an account? <Link to="/signup" className="hover-a">Sign Up</Link></h4>
                             </div>
                             <div className="form-setlogin">
                                 <h4>Or sign up with</h4>
@@ -54,16 +53,16 @@ const Signin = () => {
                             <div className="form-sociallink">
                                 <ul>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <Link to="javascript:void(0);">
                                             <img src="assets/img/icons/google.png" className="me-2" alt="google" />
                                             Sign Up using Google
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <Link href="javascript:void(0);">
                                             <img src="assets/img/icons/facebook.png" className="me-2" alt="google" />
                                             Sign Up using Facebook
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

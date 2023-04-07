@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Pos = () => {
   return (
@@ -7,206 +8,330 @@ const Pos = () => {
 			<div className="whirly-loader"> </div>
 		</div> */}
 
+      {/* Main Wrapper */}
+      <div className="main-wrapper">
+        {/* Header */}
+        <div className="header">
+          {/* Logo */}
+          <div className="header-left active">
+            <Link to="/home" className="logo logo-normal">
+              <img src="assets/img/logo.png" alt="" />
+            </Link>
+            <Link to="/home" className="logo logo-white">
+              <img src="assets/img/logo-white.png" alt="" />
+            </Link>
+            <Link to="/home" className="logo-small">
+              <img src="assets/img/logo-small.png" alt="" />
+            </Link>
+            <Link id="toggle_btn" to="javascript:void(0);"></Link>
+          </div>
+          {/* Logo */}
 
-		{/* Main Wrapper */}
-        <div className="main-wrapper">
-			
-			{/* Header */}
-			<div className="header">
-			
-				{/* Logo */}
-                 <div className="header-left active">
-					<a href="index.html" className="logo logo-normal">
-						<img src="assets/img/logo.png"  alt=""/>
-					</a>
-					<a href="index.html" className="logo logo-white">
-						<img src="assets/img/logo-white.png"  alt="" />
-					</a>
-					<a href="index.html" className="logo-small">
-						<img src="assets/img/logo-small.png"  alt="" />
-					</a>
-					<a id="toggle_btn" href="javascript:void(0);">
-					</a>
+          <Link id="mobile_btn" className="mobile_btn" to="#sidebar">
+            <span className="bar-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </Link>
+
+          {/* Header Menu */}
+          <ul className="nav user-menu">
+            {/* Search */}
+            <li className="nav-item">
+              <div className="top-nav-search">
+                <Link to="javascript:void(0);" className="responsive-search">
+                  <i className="fa fa-search"></i>
+                </Link>
+                <form action="#">
+                  <div className="searchinputs">
+                    <input type="text" placeholder="Search Here ..." />
+                    <div className="search-addon">
+                      <span>
+                        <img src="assets/img/icons/closes.svg" alt="img" />
+                      </span>
+                    </div>
+                  </div>
+                  <Link className="btn" id="searchdiv">
+                    <img src="assets/img/icons/search.svg" alt="img" />
+                  </Link>
+                </form>
+              </div>
+            </li>
+            {/* Search */}
+
+            {/* Flag */}
+            <li className="nav-item dropdown has-arrow flag-nav">
+              <Link
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                to="javascript:void(0);"
+                role="button"
+              >
+                <img src="assets/img/flags/us1.png" alt="" height="20" />
+              </Link>
+              <div className="dropdown-menu dropdown-menu-right">
+                <Link to="javascript:void(0);" className="dropdown-item">
+                  <img src="assets/img/flags/us.png" alt="" height="16" />{" "}
+                  English
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
+                  <img src="assets/img/flags/fr.png" alt="" height="16" />{" "}
+                  French
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
+                  <img src="assets/img/flags/es.png" alt="" height="16" />{" "}
+                  Spanish
+                </Link>
+                <Link to="javascript:void(0);" className="dropdown-item">
+                  <img src="assets/img/flags/de.png" alt="" height="16" />{" "}
+                  German
+                </Link>
+              </div>
+            </li>
+            {/* Flag */}
+
+            {/* Notifications */}
+            <li className="nav-item dropdown">
+              <Link
+                to="javascript:void(0);"
+                className="dropdown-toggle nav-link"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/img/icons/notification-bing.svg" alt="img" />{" "}
+                <span className="badge rounded-pill">4</span>
+              </Link>
+              <div className="dropdown-menu notifications">
+                <div className="topnav-dropdown-header">
+                  <span className="notification-title">Notifications</span>
+                  <Link to="javascript:void(0)" className="clear-noti">
+                    {" "}
+                    Clear All{" "}
+                  </Link>
                 </div>
-				{/* Logo  */}
-				
-				<a id="mobile_btn" className="mobile_btn" href="#sidebar">
-					<span className="bar-icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</a>
-				
-				{/* Header Menu */}
-				<ul className="nav user-menu">
-				
-					{/* Search */}
-					<li className="nav-item">
-						<div className="top-nav-search">
-							<a href="javascript:void(0);" className="responsive-search">
-								<i className="fa fa-search"></i>
-						   </a>
-							<form action="#">
-								 <div className="searchinputs">
-										<input type="text" placeholder="Search Here ..." />
-										<div className="search-addon">
-											<span><img src="assets/img/icons/closes.svg" alt="img" /></span>
-										</div>
-									</div>
-									<a className="btn"  id="searchdiv"><img src="assets/img/icons/search.svg" alt="img" /></a>
-							</form>
-						</div>
-					</li>
-					{/* Search  */}
-				
-					{/* Flag */}
-					<li className="nav-item dropdown has-arrow flag-nav">
-						<a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
-							<img src="assets/img/flags/us1.png" alt="" height="20" />
-						</a>
-						<div className="dropdown-menu dropdown-menu-right">
-							<a href="javascript:void(0);" className="dropdown-item">
-								<img src="assets/img/flags/us.png" alt="" height="16" /> English
-							</a>
-							<a href="javascript:void(0);" className="dropdown-item">
-								<img src="assets/img/flags/fr.png" alt="" height="16" /> French
-							</a>
-							<a href="javascript:void(0);" className="dropdown-item">
-								<img src="assets/img/flags/es.png" alt="" height="16" /> Spanish
-							</a>
-							<a href="javascript:void(0);" className="dropdown-item">
-								<img src="assets/img/flags/de.png" alt="" height="16" /> German
-							</a>
-						</div>
-					</li>
-					{/* Flag */}
-				
-					{/* Notifications */}
-					<li className="nav-item dropdown">
-						<a href="javascript:void(0);" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-							<img src="assets/img/icons/notification-bing.svg"   alt="img" /> <span className="badge rounded-pill">4</span>
-						</a>
-						<div className="dropdown-menu notifications">
-							<div className="topnav-dropdown-header">
-								<span className="notification-title">Notifications</span>
-								<a href="javascript:void(0)" className="clear-noti"> Clear All </a>
-							</div>
-							<div className="noti-content">
-								<ul className="notification-list">
-									<li className="notification-message">
-										<a href="activities.html">
-											<div className="media d-flex">
-												<span className="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-02.jpg" />
-												</span>
-												<div className="media-body flex-grow-1">
-													<p className="noti-details"><span className="noti-title">John Doe</span> added new task <span className="noti-title">Patient appointment booking</span></p>
-													<p className="noti-time"><span className="notification-time">4 mins ago</span></p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li className="notification-message">
-										<a href="activities.html">
-											<div className="media d-flex">
-												<span className="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-03.jpg" />
-												</span>
-												<div className="media-body flex-grow-1">
-													<p className="noti-details"><span className="noti-title">Tarah Shropshire</span> changed the task name <span className="noti-title">Appointment booking with payment gateway</span></p>
-													<p className="noti-time"><span className="notification-time">6 mins ago</span></p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li className="notification-message">
-										<a href="activities.html">
-											<div className="media d-flex">
-												<span className="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-06.jpg" />
-												</span>
-												<div className="media-body flex-grow-1">
-													<p className="noti-details"><span className="noti-title">Misty Tison</span> added <span className="noti-title">Domenic Houston</span> and <span className="noti-title">Claire Mapes</span> to project <span className="noti-title">Doctor available module</span></p>
-													<p className="noti-time"><span className="notification-time">8 mins ago</span></p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li className="notification-message">
-										<a href="activities.html">
-											<div className="media d-flex">
-												<span className="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-17.jpg" />
-												</span>
-												<div className="media-body flex-grow-1">
-													<p className="noti-details"><span className="noti-title">Rolland Webber</span> completed task <span className="noti-title">Patient and Doctor video conferencing</span></p>
-													<p className="noti-time"><span className="notification-time">12 mins ago</span></p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li className="notification-message">
-										<a href="activities.html">
-											<div className="media d-flex">
-												<span className="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-13.jpg" />
-												</span>
-												<div className="media-body flex-grow-1">
-													<p className="noti-details"><span className="noti-title">Bernardo Galaviz</span> added new task <span className="noti-title">Private chat module</span></p>
-													<p className="noti-time"><span className="notification-time">2 days ago</span></p>
-												</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div className="topnav-dropdown-footer">
-								<a href="activities.html">View all Notifications</a>
-							</div>
-						</div>
-					</li>
-					{/* Notifications */}
-					
+                <div className="noti-content">
+                  <ul className="notification-list">
+                    <li className="notification-message">
+                      <Link to="/activities">
+                        <div className="media d-flex">
+                          <span className="avatar flex-shrink-0">
+                            <img
+                              alt=""
+                              src="assets/img/profiles/avatar-02.jpg"
+                            />
+                          </span>
+                          <div className="media-body flex-grow-1">
+                            <p className="noti-details">
+                              <span className="noti-title">John Doe</span> added
+                              new task{" "}
+                              <span className="noti-title">
+                                Patient appointment booking
+                              </span>
+                            </p>
+                            <p className="noti-time">
+                              <span className="notification-time">
+                                4 mins ago
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="notification-message">
+                      <Link to="/activities">
+                        <div className="media d-flex">
+                          <span className="avatar flex-shrink-0">
+                            <img
+                              alt=""
+                              src="assets/img/profiles/avatar-03.jpg"
+                            />
+                          </span>
+                          <div className="media-body flex-grow-1">
+                            <p className="noti-details">
+                              <span className="noti-title">
+                                Tarah Shropshire
+                              </span>{" "}
+                              changed the task name{" "}
+                              <span className="noti-title">
+                                Appointment booking with payment gateway
+                              </span>
+                            </p>
+                            <p className="noti-time">
+                              <span className="notification-time">
+                                6 mins ago
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="notification-message">
+                      <Link to="/activities">
+                        <div className="media d-flex">
+                          <span className="avatar flex-shrink-0">
+                            <img
+                              alt=""
+                              src="assets/img/profiles/avatar-06.jpg"
+                            />
+                          </span>
+                          <div className="media-body flex-grow-1">
+                            <p className="noti-details">
+                              <span className="noti-title">Misty Tison</span>{" "}
+                              added{" "}
+                              <span className="noti-title">
+                                Domenic Houston
+                              </span>{" "}
+                              and{" "}
+                              <span className="noti-title">Claire Mapes</span>{" "}
+                              to project{" "}
+                              <span className="noti-title">
+                                Doctor available module
+                              </span>
+                            </p>
+                            <p className="noti-time">
+                              <span className="notification-time">
+                                8 mins ago
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="notification-message">
+                      <Link to="/activities">
+                        <div className="media d-flex">
+                          <span className="avatar flex-shrink-0">
+                            <img
+                              alt=""
+                              src="assets/img/profiles/avatar-17.jpg"
+                            />
+                          </span>
+                          <div className="media-body flex-grow-1">
+                            <p className="noti-details">
+                              <span className="noti-title">Rolland Webber</span>{" "}
+                              completed task{" "}
+                              <span className="noti-title">
+                                Patient and Doctor video conferencing
+                              </span>
+                            </p>
+                            <p className="noti-time">
+                              <span className="notification-time">
+                                12 mins ago
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="notification-message">
+                      <Link to="/activities">
+                        <div className="media d-flex">
+                          <span className="avatar flex-shrink-0">
+                            <img
+                              alt=""
+                              src="assets/img/profiles/avatar-13.jpg"
+                            />
+                          </span>
+                          <div className="media-body flex-grow-1">
+                            <p className="noti-details">
+                              <span className="noti-title">
+                                Bernardo Galaviz
+                              </span>{" "}
+                              added new task{" "}
+                              <span className="noti-title">
+                                Private chat module
+                              </span>
+                            </p>
+                            <p className="noti-time">
+                              <span className="notification-time">
+                                2 days ago
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="topnav-dropdown-footer">
+                  <Link to="/activities">View all Notifications</Link>
+                </div>
+              </div>
+            </li>
+            {/* Notifications */}
 
-					<li className="nav-item dropdown has-arrow main-drop">
-						<a href="javascript:void(0);" className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
-                            <span className="user-img"><img src="assets/img/profiles/avator1.jpg" alt="" />
-                            <span className="status online"></span></span>
-						</a>
-						<div className="dropdown-menu menu-drop-user">
-							<div className="profilename">
-								<div className="profileset">
-									<span className="user-img"><img src="assets/img/profiles/avator1.jpg" alt="" />
-									<span className="status online"></span></span>
-									<div className="profilesets">
-										<h6>John Doe</h6>
-										<h5>Admin</h5>
-									</div>
-								</div>
-								<hr className="m-0" />
-								<a className="dropdown-item" href="profile.html"> <i className="me-2"  data-feather="user"></i> My Profile</a>
-								<a className="dropdown-item" href="generalsettings.html"><i className="me-2" data-feather="settings"></i>Settings</a>
-								<hr className="m-0" />
-								<a className="dropdown-item logout pb-0" href="signin.html"><img src="assets/img/icons/log-out.svg" className="me-2" alt="img" />Logout</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-				{/* Header Menu */}
-				
-				{/* Mobile Menu  */}
-				<div className="dropdown mobile-user-menu">
-					<a href="javascript:void(0);" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v"></i></a>
-					<div className="dropdown-menu dropdown-menu-right">
-						<a className="dropdown-item" href="profile.html">My Profile</a>
-						<a className="dropdown-item" href="generalsettings.html">Settings</a>
-						<a className="dropdown-item" href="signin.html">Logout</a>
-					</div>
-				</div>
-				{/* Mobile Menu  */}
+            <li className="nav-item dropdown has-arrow main-drop">
+              <Link
+                to="javascript:void(0);"
+                className="dropdown-toggle nav-link userset"
+                data-bs-toggle="dropdown"
+              >
+                <span className="user-img">
+                  <img src="assets/img/profiles/avator1.jpg" alt="" />
+                  <span className="status online"></span>
+                </span>
+              </Link>
+              <div className="dropdown-menu menu-drop-user">
+                <div className="profilename">
+                  <div className="profileset">
+                    <span className="user-img">
+                      <img src="assets/img/profiles/avator1.jpg" alt="" />
+                      <span className="status online"></span>
+                    </span>
+                    <div className="profilesets">
+                      <h6>John Doe</h6>
+                      <h5>Admin</h5>
+                    </div>
+                  </div>
+                  <hr className="m-0" />
+                  <Link className="dropdown-item" to="/profile">
+                    {" "}
+                    <i className="me-2" data-feather="user"></i> My Profile
+                  </Link>
+                  <Link className="dropdown-item" to="/generalsettings">
+                    <i className="me-2" data-feather="settings"></i>Settings
+                  </Link>
+                  <hr className="m-0" />
+				  <Link to ="/signin" className="dropdown-item logout pb-0">
+				  <img
+                      src="assets/img/icons/log-out.svg"
+                      className="me-2"
+                      alt="img"
+                    />
+                    Logout
+				  </Link>
+                </div>
+              </div>
+            </li>
+          </ul>
+          {/* Header Menu */}
+
+          {/* Mobile Menu */}
+          <div className="dropdown mobile-user-menu">
+            <Link
+              to="javascript:void(0);"
+              className="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i className="fa fa-ellipsis-v"></i>
+            </Link>
+            <div className="dropdown-menu dropdown-menu-right">
+              <Link className="dropdown-item" to="/profile">
+                My Profile
+              </Link>
+              <Link className="dropdown-item" to="/generalsettings">
+                Settings
+              </Link>
+			  <Link to ="/signin" className="dropdown-item"></Link>
+              <Link className="dropdown-item" to="/signin">
+                Logout
+              </Link>
             </div>
-			{/* Header */}
+          </div>
+          {/* Mobile Menu */}
+        </div>
+        {/* Header */}
 			
             <div className="page-wrapper ms-0">
 				<div className="content">
@@ -238,34 +363,34 @@ const Pos = () => {
 									</div>
 								</li>
 								<li id="Shoes">
-									<a className="product-details">
+									<Link className="product-details">
 										<img src="assets/img/product/product65.png" alt="img" />
 										<h6>Shoes</h6>
-									</a>
+									</Link>
 								</li>
 								<li id="computer">
-									<a className="product-details">
+									<Link className="product-details">
 										<img src="assets/img/product/product66.png" alt="img" />
 										<h6>Computer</h6>
-									</a>
+									</Link>
 								</li>
 								<li id="Snacks">
-									<a className="product-details">
+									<Link className="product-details">
 										<img src="assets/img/product/product67.png" alt="img" />
 										<h6>Snacks</h6>
-									</a>
+									</Link>
 								</li>
 								<li id="watch">
-									<a className="product-details">
+									<Link className="product-details">
 										<img src="assets/img/product/product68.png" alt="img" />
 										<h6>Watches</h6>
-									</a>
+									</Link>
 								</li>
 								<li id="cycle">
-									<a className="product-details">
+									<Link className="product-details">
 										<img src="assets/img/product/product61.png" alt="img" />
 										<h6>Cycles</h6>
-									</a>
+									</Link>
 								</li>	
 								<li id="fruits1">
 									<div className="product-details " >
@@ -782,21 +907,21 @@ const Pos = () => {
 								<div className="actionproducts">
 									<ul>
 										<li>
-											<a href="javascript:void(0);" className="deletebg confirm-text"><img src="assets/img/icons/delete-2.svg" alt="img" /></a>
+											<Link to="javascript:void(0);" className="deletebg confirm-text"><img src="assets/img/icons/delete-2.svg" alt="img" /></Link>
 										</li>
 										<li>
-											<a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset" >
+											<Link to="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" className="dropset" >
 												<img src="assets/img/icons/ellipise1.svg" alt="img" />
-											</a>
+											</Link>
 											<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton" data-popper-placement="bottom-end">
 												<li>
-													<a href="#" className="dropdown-item">Action</a>
+													<Link to="#" className="dropdown-item">Action</Link>
 												</li>
 												<li>
-													<a href="#" className="dropdown-item">Another Action</a>
+													<Link to="#" className="dropdown-item">Another Action</Link>
 												</li>
 												<li>
-													<a href="#" className="dropdown-item">Something Elses</a>
+													<Link to="#" className="dropdown-item">Something Elses</Link>
 												</li>
 											</ul>
 										</li>
@@ -807,7 +932,7 @@ const Pos = () => {
 								<div className="card-body">
 									<div className="row">
 										<div className="col-12">
-											<a href="javascript:void(0);" className="btn btn-adds" data-bs-toggle="modal" data-bs-target="#create"><i className="fa fa-plus me-2"></i>Add Customer</a>
+											<Link to="javascript:void(0);" className="btn btn-adds" data-bs-toggle="modal" data-bs-target="#create"><i className="fa fa-plus me-2"></i>Add Customer</Link>
 										</div>
 										<div className="col-lg-12">
 											<div className="select-split ">
@@ -831,7 +956,7 @@ const Pos = () => {
 										</div>
 										<div className="col-12">
 											<div className="text-end">
-												<a className="btn btn-scanner-set"><img src="assets/img/icons/scanner1.svg" alt="img" className="me-2" />Scan bardcode</a>
+												<Link className="btn btn-scanner-set"><img src="assets/img/icons/scanner1.svg" alt="img" className="me-2" />Scan bardcode</Link>
 											</div>
 										</div>
 									</div>
@@ -841,7 +966,7 @@ const Pos = () => {
 								<div className="card-body pt-0">
 									<div className="totalitem">
 										<h4>Total items : 4</h4>
-										<a href="javascript:void(0);">Clear all</a>
+										<Link to="javascript:void(0);">Clear all</Link>
 									</div>
 									<div className="product-table">
 										<ul className="product-lists">
@@ -852,7 +977,7 @@ const Pos = () => {
 													</div>
 													<div className="productcontet">
 														<h4>Pineapple 
-														<a href="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></a>
+														<Link to="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></Link>
 														</h4>
 														<div className="productlinkset">
 															<h5>PT001</h5>
@@ -868,7 +993,7 @@ const Pos = () => {
 												</div>
 											</li>
 											<li>3000.00	</li>
-											<li><a className="confirm-text" href="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></a></li>
+											<li><Link className="confirm-text" to="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></Link></li>
 										</ul>
 										<ul className="product-lists">
 											<li>
@@ -878,7 +1003,7 @@ const Pos = () => {
 													</div>
 													<div className="productcontet">
 														<h4>Green Nike 
-														<a href="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></a>
+														<Link to="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></Link>
 														</h4>
 														<div className="productlinkset">
 															<h5>PT001</h5>
@@ -894,7 +1019,7 @@ const Pos = () => {
 												</div>
 											</li>
 											<li>3000.00	</li>
-											<li><a className="confirm-text" href="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></a></li>
+											<li><Link className="confirm-text" to="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></Link></li>
 										</ul>
 										<ul className="product-lists">
 											<li>
@@ -904,7 +1029,7 @@ const Pos = () => {
 													</div>
 													<div className="productcontet">
 														<h4>Banana
-														<a href="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></a>
+														<Link to="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></Link>
 														</h4>
 														<div className="productlinkset">
 															<h5>PT001</h5>
@@ -920,7 +1045,7 @@ const Pos = () => {
 												</div>
 											</li>
 											<li>3000.00	</li>
-											<li><a className="confirm-text" href="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></a></li>
+											<li><Link className="confirm-text" to="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></Link></li>
 										</ul>
 										<ul className="product-lists">
 											<li>
@@ -930,7 +1055,7 @@ const Pos = () => {
 													</div>
 													<div className="productcontet">
 														<h4>Strawberry
-														<a href="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></a>
+														<Link to="javascript:void(0);" className="ms-2" data-bs-toggle="modal" data-bs-target="#edit"><img src="assets/img/icons/edit-5.svg" alt="img" /></Link>
 														</h4>
 														<div className="productlinkset">
 															<h5>PT001</h5>
@@ -946,7 +1071,7 @@ const Pos = () => {
 												</div>
 											</li>
 											<li>3000.00	</li>
-											<li><a className="confirm-text" href="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></a></li>
+											<li><Link className="confirm-text" to="javascript:void(0);"><img src="assets/img/icons/delete-2.svg" alt="img" /></Link></li>
 										</ul>
 									</div>
 								</div>
@@ -972,22 +1097,22 @@ const Pos = () => {
 									<div className="setvaluecash">
 										<ul>
 											<li>
-												<a href="javascript:void(0);" className="paymentmethod">
+												<Link to="javascript:void(0);" className="paymentmethod">
 													<img src="assets/img/icons/cash.svg" alt="img" className="me-2" />
 													Cash
-												</a>
+												</Link>
 											</li>
 											<li>
-												<a href="javascript:void(0);" className="paymentmethod">
+												<Link to="javascript:void(0);" className="paymentmethod">
 													<img src="assets/img/icons/debitcard.svg" alt="img" className="me-2" />
 													Debit
-												</a>
+												</Link>
 											</li>
 											<li>
-												<a href="javascript:void(0);" className="paymentmethod">
+												<Link to="javascript:void(0);" className="paymentmethod">
 													<img src="assets/img/icons/scan.svg" alt="img" className="me-2" />
 													Scan
-												</a>
+												</Link>
 											</li>
 										</ul>
 									</div>		
@@ -998,19 +1123,19 @@ const Pos = () => {
 									<div className="btn-pos">
 										<ul>
 											<li>
-												<a className="btn"><img src="assets/img/icons/pause1.svg" alt="img" className="me-1" />Hold</a>
+												<Link className="btn"><img src="assets/img/icons/pause1.svg" alt="img" className="me-1" />Hold</Link>
 											</li>
 											<li>
-												<a className="btn"><img src="assets/img/icons/edit-6.svg" alt="img" className="me-1" />Quotation</a>
+												<Link className="btn"><img src="assets/img/icons/edit-6.svg" alt="img" className="me-1" />Quotation</Link>
 											</li>
 											<li>
-												<a className="btn"><img src="assets/img/icons/trash12.svg" alt="img" className="me-1" />Void</a>
+												<Link className="btn"><img src="assets/img/icons/trash12.svg" alt="img" className="me-1" />Void</Link>
 											</li>
 											<li>
-												<a className="btn"><img src="assets/img/icons/wallet1.svg" alt="img" className="me-1" />Payment</a>
+												<Link className="btn"><img src="assets/img/icons/wallet1.svg" alt="img" className="me-1" />Payment</Link>
 											</li>
 											<li>
-												<a className="btn"  data-bs-toggle="modal" data-bs-target="#recents"><img src="assets/img/icons/transcation.svg" alt="img" className="me-1" /> Transaction</a>
+												<Link className="btn"  data-bs-toggle="modal" data-bs-target="#recents"><img src="assets/img/icons/transcation.svg" alt="img" className="me-1" /> Transaction</Link>
 											</li>
 										</ul>
 									</div>
@@ -1037,40 +1162,40 @@ const Pos = () => {
 							</div>
 							<ul>
 								<li>
-									<a href="javascript:void(0);">1</a>
+									<Link to="javascript:void(0);">1</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">2</a>
+									<Link to="javascript:void(0);">2</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">3</a>
+									<Link to="javascript:void(0);">3</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">4</a>
+									<Link to="javascript:void(0);">4</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">5</a>
+									<Link to="javascript:void(0);">5</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">6</a>
+									<Link to="javascript:void(0);">6</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">7</a>
+									<Link to="javascript:void(0);">7</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">8</a>
+									<Link to="javascript:void(0);">8</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">9</a>
+									<Link to="javascript:void(0);">9</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);" className="btn btn-closes"><img src="assets/img/icons/close-circle.svg" alt="img" /></a>
+									<Link to="javascript:void(0);" className="btn btn-closes"><img src="assets/img/icons/close-circle.svg" alt="img" /></Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);">0</a>
+									<Link to="javascript:void(0);">0</Link>
 								</li>
 								<li>
-									<a href="javascript:void(0);" className="btn btn-reverse"><img src="assets/img/icons/reverse.svg" alt="img" /></a>
+									<Link to="javascript:void(0);" className="btn btn-reverse"><img src="assets/img/icons/reverse.svg" alt="img" /></Link>
 								</li>
 							</ul>
 						</div>
@@ -1099,8 +1224,8 @@ const Pos = () => {
 							<p>The current order will be set on hold. You can retreive this order from the pending order button. Providing a reference to it might help you to identify the order more quickly.</p>
 						</div>
 						<div className="col-lg-12">
-							<a className="btn btn-submit me-2">Submit</a>
-							<a className="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+							<Link className="btn btn-submit me-2">Submit</Link>
+							<Link className="btn btn-cancel" data-bs-dismiss="modal">Cancel</Link>
 						</div>
 					</div>
 				</div>
@@ -1137,9 +1262,9 @@ const Pos = () => {
 									<label> Tax</label>
 									<div className="input-group">
 										<input type="text" />
-										<a className="scanner-set input-group-text">
+										<Link className="scanner-set input-group-text">
 											%
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -1169,8 +1294,8 @@ const Pos = () => {
 							</div>
 						</div>
 						<div className="col-lg-12">
-							<a className="btn btn-submit me-2">Submit</a>
-							<a className="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+							<Link className="btn btn-submit me-2">Submit</Link>
+							<Link className="btn btn-cancel" data-bs-dismiss="modal">Cancel</Link>
 						</div>
 					</div>
 				</div>
@@ -1225,8 +1350,8 @@ const Pos = () => {
 							</div>
 						</div>
 						<div className="col-lg-12">
-							<a className="btn btn-submit me-2">Submit</a>
-							<a className="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+							<Link className="btn btn-submit me-2">Submit</Link>
+							<Link className="btn btn-cancel" data-bs-dismiss="modal">Cancel</Link>
 						</div>
 					</div>
 				</div>
@@ -1249,8 +1374,8 @@ const Pos = () => {
 							<p>The current order will be deleted as no payment has been <br /> made so far.</p>
 						</div>
 						<div className="col-lg-12 text-center">
-							<a className="btn btn-danger me-2">Yes</a>
-							<a className="btn btn-cancel" data-bs-dismiss="modal">No</a>
+							<Link className="btn btn-danger me-2">Yes</Link>
+							<Link className="btn btn-cancel" data-bs-dismiss="modal">No</Link>
 						</div>
 					</div>
 				</div>
@@ -1283,19 +1408,19 @@ const Pos = () => {
 									<div className="table-top">
 										<div className="search-set">
 											<div className="search-input">
-												<a className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></a>
+												<Link className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></Link>
 											</div>
 										</div>
 										<div className="wordset">
 											<ul>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></Link>
 												</li>
 											</ul>
 										</div>
@@ -1318,15 +1443,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1335,15 +1460,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1352,15 +1477,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1369,15 +1494,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1386,15 +1511,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1403,15 +1528,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1420,15 +1545,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 											</tbody>
@@ -1439,19 +1564,19 @@ const Pos = () => {
 									<div className="table-top">
 										<div className="search-set">
 											<div className="search-input">
-												<a className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></a>
+												<Link className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></Link>
 											</div>
 										</div>
 										<div className="wordset">
 											<ul>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></Link>
 												</li>
 											</ul>
 										</div>
@@ -1474,15 +1599,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1491,15 +1616,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1508,15 +1633,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1525,15 +1650,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" /> 
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1542,15 +1667,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1559,15 +1684,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1576,15 +1701,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 											</tbody>
@@ -1595,19 +1720,19 @@ const Pos = () => {
 									<div className="table-top">
 										<div className="search-set">
 											<div className="search-input">
-												<a className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></a>
+												<Link className="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></Link>
 											</div>
 										</div>
 										<div className="wordset">
 											<ul>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="pdf"><img src="assets/img/icons/pdf.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="excel"><img src="assets/img/icons/excel.svg" alt="img" /></Link>
 												</li>
 												<li>
-													<a data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></a>
+													<Link data-bs-toggle="tooltip" data-bs-placement="top" title="print"><img src="assets/img/icons/printer.svg" alt="img" /></Link>
 												</li>
 											</ul>
 										</div>
@@ -1630,15 +1755,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1647,15 +1772,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1664,15 +1789,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1681,15 +1806,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1698,15 +1823,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1715,15 +1840,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 												<tr>
@@ -1732,15 +1857,15 @@ const Pos = () => {
 													<td>Walk-in Customer</td>
 													<td>$ 1500.00</td>
 													<td>
-														<a className="me-3" href="javascript:void(0);">
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/eye.svg" alt="img" />
-														</a>
-														<a className="me-3" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3" to="javascript:void(0);">
 															<img src="assets/img/icons/edit.svg" alt="img" />
-														</a>
-														<a className="me-3 confirm-text" href="javascript:void(0);">
+														</Link>
+														<Link className="me-3 confirm-text" to="javascript:void(0);">
 															<img src="assets/img/icons/delete.svg" alt="img" />
-														</a>
+														</Link>
 													</td>
 												</tr>
 											</tbody>
